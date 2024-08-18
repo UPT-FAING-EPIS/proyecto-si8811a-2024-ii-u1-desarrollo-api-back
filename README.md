@@ -1,2 +1,19 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/vK6WBQ1t)
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=15560937)
+# Aplicación de Información para los Juegos Florales UPT
+
+## 📚 Descripción de la Aplicación
+
+Esta aplicación está diseñada para proporcionar información detallada sobre los Juegos Florales organizados por la Universidad Privada de Tacna (UPT). Los Juegos Florales son una celebración del talento artístico y cultural de los estudiantes de la UPT, promoviendo la creatividad y el trabajo en equipo.
+
+## 📊 Ejemplos de Uso del Método POST
+
+### Envío de Datos de Equipos
+
+Para registrar un nuevo equipo en la aplicación, utiliza el siguiente formato JSON:
+
+```json
+POST /api/equipos
+{
+  "nombre": "Equipo A",
+  "detalle": "Detalles del equipo A",
+  "participantes": []
+}
