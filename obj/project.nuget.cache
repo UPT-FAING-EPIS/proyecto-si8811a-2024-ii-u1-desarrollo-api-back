@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "06OpyiY+LpI=",
+  "dgSpecHash": "bTEfckuxxCY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\MrYisus\\source\\repos\\proyecto-si8811a-2024-ii-u1-desarrollo-api-back\\proyecto-si8811a-2024-ii-u1-desarrollo-api-back.csproj",
+  "projectFilePath": "C:\\Users\\MrYisus\\Desktop\\proyecto-si8811a-2024-ii-u1-desarrollo-api-back\\proyecto-si8811a-2024-ii-u1-desarrollo-api-back.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MrYisus\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\MrYisus\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

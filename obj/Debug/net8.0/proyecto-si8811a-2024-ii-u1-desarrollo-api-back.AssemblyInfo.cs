@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("proyecto-si8811a-2024-ii-u1-desarrollo-api-back")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01d7a64b4f79cbb0d9a89dfe827d85bd4b118ebf")]
 [assembly: System.Reflection.AssemblyProductAttribute("proyecto-si8811a-2024-ii-u1-desarrollo-api-back")]
 [assembly: System.Reflection.AssemblyTitleAttribute("proyecto-si8811a-2024-ii-u1-desarrollo-api-back")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -19,7 +19,9 @@ builder.Services.AddSingleton<IMongoClient>(s =>
 // Add specific services.
 builder.Services.AddSingleton<EquipoService>();
 builder.Services.AddSingleton<ParticipanteService>();
-
+builder.Services.AddSingleton<ActividadService>();
+builder.Services.AddSingleton<EventoService>();
+builder.Services.AddSingleton<FixtureService>();
 // Add services to the container.
 builder.Services.AddControllers();
 

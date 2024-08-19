@@ -1295,11 +1295,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MrYisus\\source\\repos\\proyecto-si8811a-2024-ii-u1-desarrollo-api-back\\proyecto-si8811a-2024-ii-u1-desarrollo-api-back.csproj",
+      "projectUniqueName": "C:\\Users\\MrYisus\\Desktop\\proyecto-si8811a-2024-ii-u1-desarrollo-api-back\\proyecto-si8811a-2024-ii-u1-desarrollo-api-back.csproj",
       "projectName": "proyecto-si8811a-2024-ii-u1-desarrollo-api-back",
-      "projectPath": "C:\\Users\\MrYisus\\source\\repos\\proyecto-si8811a-2024-ii-u1-desarrollo-api-back\\proyecto-si8811a-2024-ii-u1-desarrollo-api-back.csproj",
+      "projectPath": "C:\\Users\\MrYisus\\Desktop\\proyecto-si8811a-2024-ii-u1-desarrollo-api-back\\proyecto-si8811a-2024-ii-u1-desarrollo-api-back.csproj",
       "packagesPath": "C:\\Users\\MrYisus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MrYisus\\source\\repos\\proyecto-si8811a-2024-ii-u1-desarrollo-api-back\\obj\\",
+      "outputPath": "C:\\Users\\MrYisus\\Desktop\\proyecto-si8811a-2024-ii-u1-desarrollo-api-back\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MrYisus\\AppData\\Roaming\\NuGet\\NuGet.Config",
