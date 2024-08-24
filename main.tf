@@ -42,13 +42,12 @@ resource "azurerm_linux_web_app" "api1" {
   resource_group_name = azurerm_resource_group.rg.name
   service_plan_id     = azurerm_service_plan.asp.id
 
-  site_config {
-    always_on = true
-    application_stack {
-      docker_image     = "#{API1_DOCKER_IMAGE}"
-      docker_image_tag = "#{API1_DOCKER_IMAGE_TAG}"
-    }
+ site_config {
+  application_stack {
+    docker_image_name = "#{API1_DOCKER_IMAGE}:#{API1_DOCKER_IMAGE_TAG}"
+    docker_registry_url = "https://#{API_ACR_NAME}.azurecr.io"
   }
+}
 
   app_settings = {
     "WEBSITES_ENABLE_APP_SERVICE_STORAGE" = "false"
@@ -65,12 +64,12 @@ resource "azurerm_linux_web_app" "api2" {
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   service_plan_id     = azurerm_service_plan.asp.id
-
+  
   site_config {
     always_on = true
     application_stack {
-      docker_image     = "#{API2_DOCKER_IMAGE}"
-      docker_image_tag = "#{API2_DOCKER_IMAGE_TAG}"
+      docker_image_name = "#{API2_DOCKER_IMAGE}:#{API2_DOCKER_IMAGE_TAG}"
+      docker_registry_url = "https://#{API_ACR_NAME}.azurecr.io"
     }
   }
 
@@ -171,13 +170,12 @@ resource "azurerm_linux_web_app" "frontend" {
   service_plan_id     = azurerm_service_plan.asp_frontend.id
 
   site_config {
-    always_on = true
-    application_stack {
-      docker_image     = "#{FRONTEND_DOCKER_IMAGE}"
-      docker_image_tag = "#{FRONTEND_DOCKER_IMAGE_TAG}"
-    }
+  always_on = true
+  application_stack {
+    docker_image_name = "#{FRONTEND_DOCKER_IMAGE}:#{FRONTEND_DOCKER_IMAGE_TAG}"
+    docker_registry_url = "https://#{FRONTEND_ACR_NAME}.azurecr.io"
   }
-
+}
   app_settings = {
     "WEBSITES_ENABLE_APP_SERVICE_STORAGE" = "false"
     "DOCKER_REGISTRY_SERVER_URL"          = "https://#{FRONTEND_ACR_NAME}.azurecr.io"
