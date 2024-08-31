@@ -27,3 +27,16 @@ output "backend_aks_cluster_name" {
   description = "The name of the AKS cluster running the backend API"
   value       = module.backend_api.aks_cluster_name
 }
+
+output "grafana_id" {
+  value = module.grafana.grafana_id
+}
+
+output "grafana_endpoint" {
+  value = module.grafana.grafana_endpoint
+}
+
+output "mongodb_connection_string" {
+  value     = module.mongodb.connection_string
+  sensitive = true
+}

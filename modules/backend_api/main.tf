@@ -1,63 +1,62 @@
-variable "resource_group_name" {
-  description = "The name of the resource group"
-  type        = string
-}
+resource "aws_lambda_function" "backend_api" {
+  filename      = "lambda_function.zip"
+  function_name = var.lambda_function_name
+  role          = aws_iam_role.lambda_exec.arn
+  handler       = "index.handler"
+  runtime       = "nodejs14.x"
 
-variable "location" {
-  description = "The Azure region to deploy resources"
-  type        = string
-}
-
-variable "acr_name" {
-  description = "The name of the Azure Container Registry"
-  type        = string
-}
-
-variable "aks_cluster_name" {
-  description = "The name of the AKS cluster"
-  type        = string
-}
-
-variable "subnet_id" {
-  description = "The ID of the subnet for the AKS cluster"
-  type        = string
-}
-
-variable "node_count" {
-  description = "The number of nodes in the AKS cluster"
-  type        = number
-}
-
-
-resource "azurerm_container_registry" "backend" {
-  name                = var.acr_name
-  resource_group_name = var.resource_group_name
-  location            = var.location
-  sku                 = "Standard"
-  admin_enabled       = true
-}
-
-resource "azurerm_kubernetes_cluster" "backend" {
-  name                = var.aks_cluster_name
-  location            = var.location
-  resource_group_name = var.resource_group_name
-  dns_prefix          = var.aks_cluster_name
-
-  default_node_pool {
-    name       = "default"
-    node_count = var.node_count
-    vm_size    = "Standard_DS2_v2"
-    vnet_subnet_id = var.subnet_id
-  }
-
-  identity {
-    type = "SystemAssigned"
+  environment {
+    variables = {
+      ENV = var.environment
+    }
   }
 }
 
-resource "azurerm_role_assignment" "aks_acr" {
-  principal_id                     = azurerm_kubernetes_cluster.backend.kubelet_identity[0].object_id
-  role_definition_name             = "AcrPull"
-  scope                            = azurerm_container_registry.backend.id
-  skip_service_principal_aad_check = true
+resource "aws_iam_role" "lambda_exec" {
+  name = "${var.lambda_function_name}-exec-role"
+
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Action = "sts:AssumeRole"
+        Effect = "Allow"
+        Principal = {
+          Service = "lambda.amazonaws.com"
+        }
+      }
+    ]
+  })
+}
+
+resource "aws_apigatewayv2_api" "backend_api" {
+  name          = var.api_gateway_name
+  protocol_type = "HTTP"
+}
+
+resource "aws_apigatewayv2_stage" "backend_api" {
+  api_id = aws_apigatewayv2_api.backend_api.id
+  name   = "$default"
+  auto_deploy = true
+}
+
+resource "aws_apigatewayv2_integration" "backend_api" {
+  api_id             = aws_apigatewayv2_api.backend_api.id
+  integration_type   = "AWS_PROXY"
+  integration_method = "POST"
+  integration_uri    = aws_lambda_function.backend_api.invoke_arn
+}
+
+resource "aws_apigatewayv2_route" "backend_api" {
+  api_id    = aws_apigatewayv2_api.backend_api.id
+  route_key = "ANY /{proxy+}"
+  target    = "integrations/${aws_apigatewayv2_integration.backend_api.id}"
+}
+
+resource "aws_lambda_permission" "api_gw" {
+  statement_id  = "AllowAPIGatewayInvoke"
+  action        = "lambda:InvokeFunction"
+  function_name = aws_lambda_function.backend_api.function_name
+  principal     = "apigateway.amazonaws.com"
+  source_arn    = "${aws_apigatewayv2_api.backend_api.execution_arn}/*/*"
 }

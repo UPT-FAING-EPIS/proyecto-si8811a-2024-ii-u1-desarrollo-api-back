@@ -1,0 +1,25 @@
+resource_group_name = "my-project-rg"
+location = "eastus"
+flutter_app_storage_account_name = "myflutterapp12345"
+react_app_storage_account_name = "myreactapp12345"
+acr_name = "mybackendacr12345"
+aks_cluster_name = "my-aks-cluster"
+subnet_id = "/subscriptions/your-subscription-id/resourceGroups/your-vnet-rg/providers/Microsoft.Network/virtualNetworks/your-vnet/subnets/your-subnet"
+backend_node_count = 2
+
+
+
+#mongodb
+mongodb_project_name = "my-atlas-project"
+mongodb_atlas_org_id = "your-org-id" 
+mongodb_cluster_name = "my-free-cluster"
+mongodb_username     = "myuser"
+mongodb_password     = "mypassword" 
+mongodb_database_name = "myapp"
+
+
+
+#grafana
+grafana_ami_id = "ami-xxxxxxxx"  
+grafana_instance_type = "t2.micro"
+grafana_key_name = "my-key-pair"
