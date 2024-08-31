@@ -49,6 +49,6 @@ app.MapControllers();
 
 app.UseCors("AllowAllOrigins");
 
-app.Urls.Add("http://0.0.0.0:5288");
+app.Urls.Add("http://0.0.0.0:8080");
 
 app.Run();
