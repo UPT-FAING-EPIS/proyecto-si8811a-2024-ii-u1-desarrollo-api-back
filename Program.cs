@@ -19,9 +19,6 @@ builder.Services.AddSingleton<IMongoClient>(s =>
 // Add specific services.
 builder.Services.AddSingleton<EquipoService>();
 builder.Services.AddSingleton<ParticipanteService>();
-builder.Services.AddSingleton<ActividadService>();
-builder.Services.AddSingleton<EventoService>();
-builder.Services.AddSingleton<FixtureService>();
 // Add services to the container.
 builder.Services.AddControllers();
 
@@ -32,14 +29,13 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.Urls.Add("http://0.0.0.0:5288");
 
 app.Run();

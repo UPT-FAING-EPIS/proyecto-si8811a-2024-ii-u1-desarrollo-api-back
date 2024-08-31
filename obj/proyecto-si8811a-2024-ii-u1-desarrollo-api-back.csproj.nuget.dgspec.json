@@ -1,28 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MrYisus\\Desktop\\proyecto-si8811a-2024-ii-u1-desarrollo-api-back\\proyecto-si8811a-2024-ii-u1-desarrollo-api-back.csproj": {}
+    "/home/proyecto-si8811a-2024-ii-u1-desarrollo-api-back/proyecto-si8811a-2024-ii-u1-desarrollo-api-back.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MrYisus\\Desktop\\proyecto-si8811a-2024-ii-u1-desarrollo-api-back\\proyecto-si8811a-2024-ii-u1-desarrollo-api-back.csproj": {
+    "/home/proyecto-si8811a-2024-ii-u1-desarrollo-api-back/proyecto-si8811a-2024-ii-u1-desarrollo-api-back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MrYisus\\Desktop\\proyecto-si8811a-2024-ii-u1-desarrollo-api-back\\proyecto-si8811a-2024-ii-u1-desarrollo-api-back.csproj",
+        "projectUniqueName": "/home/proyecto-si8811a-2024-ii-u1-desarrollo-api-back/proyecto-si8811a-2024-ii-u1-desarrollo-api-back.csproj",
         "projectName": "proyecto-si8811a-2024-ii-u1-desarrollo-api-back",
-        "projectPath": "C:\\Users\\MrYisus\\Desktop\\proyecto-si8811a-2024-ii-u1-desarrollo-api-back\\proyecto-si8811a-2024-ii-u1-desarrollo-api-back.csproj",
-        "packagesPath": "C:\\Users\\MrYisus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MrYisus\\Desktop\\proyecto-si8811a-2024-ii-u1-desarrollo-api-back\\obj\\",
+        "projectPath": "/home/proyecto-si8811a-2024-ii-u1-desarrollo-api-back/proyecto-si8811a-2024-ii-u1-desarrollo-api-back.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/home/proyecto-si8811a-2024-ii-u1-desarrollo-api-back/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MrYisus\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/root/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -78,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
