@@ -67,6 +67,11 @@ terraform apply
 
 Las contribuciones son bienvenidas. Por favor, abre un issue o un pull request para sugerir cambios o mejoras.
 
+## Diagramas
+backend_api
+![image](https://github.com/user-attachments/assets/e5b1350c-7dc3-425f-80f4-f18f67990f34)
+
+
 ## Licencia
 
 [MIT](https://choosealicense.com/licenses/mit/)
