@@ -26,7 +26,6 @@ resource "mongodbatlas_cluster" "cluster" {
 
   # M0 clusters do not support these configurations
   auto_scaling_disk_gb_enabled = false
-  mongo_db_major_version       = "5.0"
 }
 
 resource "mongodbatlas_database_user" "user" {
