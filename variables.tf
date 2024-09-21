@@ -31,25 +31,10 @@ variable "api_gateway_name" {
   type        = string
 }
 
-variable "lambda_function_name" {
-  description = "Name of the Lambda function for backend"
-  type        = string
-}
-
-variable "grafana_ami_id" {
-  description = "AMI ID for Grafana server"
-  type        = string
-}
-
 variable "grafana_instance_type" {
   description = "Instance type for Grafana server"
   type        = string
   default     = "t2.micro"
-}
-
-variable "grafana_key_name" {
-  description = "Key pair name for Grafana SSH access"
-  type        = string
 }
 
 variable "mongodb_project_name" {
@@ -99,4 +84,7 @@ variable "grafana_cloud_api_key" {
   type        = string
 }
 
-
+variable "ec2_key_name" {
+  description = "The key pair name for EC2 instance"
+  type        = string
+}

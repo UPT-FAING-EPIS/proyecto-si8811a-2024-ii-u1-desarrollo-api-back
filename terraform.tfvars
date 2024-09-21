@@ -1,4 +1,4 @@
-aws_region = "us-west-2"
+aws_region = "us-east-1"
 environment = "dev"
 
 mongodb_project_name = "my-mongodb-project"
@@ -17,4 +17,4 @@ mongodb_atlas_org_id = "#"
 mongodb_atlas_public_key = "#"
 mongodb_atlas_private_key  = "#"
 grafana_cloud_api_key = "#"
-
+ec2_key_name = "#"

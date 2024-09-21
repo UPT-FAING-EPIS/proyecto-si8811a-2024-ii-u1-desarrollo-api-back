@@ -28,15 +28,12 @@ provider "grafana" {
   cloud_api_key = var.grafana_cloud_api_key
 }
 
-
-
 module "grafana_resources" {
   source = "./modules/grafana"
   
   providers = {
     grafana = grafana
   }
-
 }
 
 module "mongodb" {
@@ -55,9 +52,6 @@ module "mongodb" {
   database_name = var.mongodb_database_name
 }
 
-
-
-
 module "web_app" {
   source = "./modules/web_app"
   
@@ -72,9 +66,13 @@ module "mobile_app" {
   environment     = var.environment
 }
 
-module "backend_api" {
-  source = "./modules/backend_api"
+module "docker_host" {
+  source = "./modules/docker_host"
   
-  api_gateway_name = var.api_gateway_name
-  environment     = var.environment
+  environment = var.environment
+  key_name    = var.ec2_key_name
+  backend_images = [
+    "josueamayatorres/api:v1",
+    "palbertt/automatizacion:api2-v1.0.0"
+  ]
 }
