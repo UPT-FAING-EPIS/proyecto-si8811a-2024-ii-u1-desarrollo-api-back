@@ -3,6 +3,12 @@ variable "aws_region" {
   type        = string
   default     = "us-west-2"
 }
+variable "mongodb_region" {
+  description = "mongodb region to deploy resources"
+  type        = string
+  default     = "US_WEST_2"
+}
+
 
 variable "environment" {
   description = "Deployment environment"
@@ -75,3 +81,22 @@ variable "mongodb_database_name" {
   description = "The name of the database to create in MongoDB"
   type        = string
 }
+
+
+
+
+variable "mongodb_atlas_public_key" {
+  description = "mongodb_atlas_public_key"
+  type        = string
+}
+variable "mongodb_atlas_private_key" {
+  description = "mongodb_atlas_private_key"
+  type        = string
+}
+
+variable "grafana_cloud_api_key" {
+  description = "grafana_cloud_api_key"
+  type        = string
+}
+
+

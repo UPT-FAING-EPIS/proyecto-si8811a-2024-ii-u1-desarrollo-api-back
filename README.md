@@ -18,7 +18,7 @@ project/
 text
 
 
-## Componentes 
+## Componentes
 
 - **Aplicación Móvil (Flutter)**: Alojada en Azure Storage con CDN.
 - **Aplicación Web (React)**: Alojada en Azure Storage con CDN.

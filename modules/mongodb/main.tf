@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     mongodbatlas = {
-      source = "mongodb/mongodbatlas"
+      source  = "mongodb/mongodbatlas"
       version = "~> 1.0"
     }
   }
@@ -19,13 +19,15 @@ resource "mongodbatlas_cluster" "cluster" {
   provider_name               = "TENANT"
   backing_provider_name       = "AWS"
   provider_region_name        = var.region
-  provider_instance_size_name = "M0" # Free tier
+  provider_instance_size_name = "M0"
 
-  # M0 clusters are always the latest MongoDB version
-  mongo_db_major_version = "5.0"
+  # Elimina estas líneas para evitar intentos de actualización
+  # mongo_db_major_version = "5.0"
+  # auto_scaling_disk_gb_enabled = false
 
-  # M0 clusters do not support these configurations
-  auto_scaling_disk_gb_enabled = false
+  lifecycle {
+    ignore_changes = all
+  }
 }
 
 resource "mongodbatlas_database_user" "user" {
