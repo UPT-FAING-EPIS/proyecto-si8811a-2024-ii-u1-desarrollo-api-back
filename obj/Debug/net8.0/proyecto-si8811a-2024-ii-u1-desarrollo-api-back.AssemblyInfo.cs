@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("proyecto-si8811a-2024-ii-u1-desarrollo-api-back")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+249f65142b8f6cfcd2b2bd8c940374c50929a50a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c241cf9c849cdcbc429040bc01ffad246be76cde")]
 [assembly: System.Reflection.AssemblyProductAttribute("proyecto-si8811a-2024-ii-u1-desarrollo-api-back")]
 [assembly: System.Reflection.AssemblyTitleAttribute("proyecto-si8811a-2024-ii-u1-desarrollo-api-back")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
