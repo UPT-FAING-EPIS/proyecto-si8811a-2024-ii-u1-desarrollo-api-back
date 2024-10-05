@@ -1,47 +1,41 @@
-variable "resource_group_name" {
-  description = "The name of the resource group"
-  type        = string
+resource "aws_s3_bucket" "flutter_app_bucket" {
+  bucket = var.app_bucket_name
 }
 
-variable "location" {
-  description = "The Azure region to deploy resources"
-  type        = string
-}
+resource "aws_s3_bucket_website_configuration" "flutter_app_website" {
+  bucket = aws_s3_bucket.flutter_app_bucket.id
 
-variable "app_bucket_name" {
-  description = "The name of the storage account for the Flutter app"
-  type        = string
-}
+  index_document {
+    suffix = "index.html"
+  }
 
-
-resource "azurerm_storage_account" "flutter_app" {
-  name                     = var.app_bucket_name
-  resource_group_name      = var.resource_group_name
-  location                 = var.location
-  account_tier             = "Standard"
-  account_replication_type = "LRS"
-  enable_https_traffic_only = true
-
-  static_website {
-    index_document = "index.html"
+  error_document {
+    key = "index.html"
   }
 }
 
-resource "azurerm_cdn_profile" "flutter_app" {
-  name                = "${var.app_bucket_name}-cdnprofile"
-  location            = var.location
-  resource_group_name = var.resource_group_name
-  sku                 = "Standard_Microsoft"
+resource "aws_s3_bucket_public_access_block" "flutter_app_public_access" {
+  bucket = aws_s3_bucket.flutter_app_bucket.id
+
+  block_public_acls       = false
+  block_public_policy     = false
+  ignore_public_acls      = false
+  restrict_public_buckets = false
 }
 
-resource "azurerm_cdn_endpoint" "flutter_app" {
-  name                = "${var.app_bucket_name}-cdnendpoint"
-  profile_name        = azurerm_cdn_profile.flutter_app.name
-  location            = var.location
-  resource_group_name = var.resource_group_name
+resource "aws_s3_bucket_policy" "flutter_app_bucket_policy" {
+  bucket = aws_s3_bucket.flutter_app_bucket.id
 
-  origin {
-    name      = "flutter-app-origin"
-    host_name = azurerm_storage_account.flutter_app.primary_web_host
-  }
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Sid       = "PublicReadGetObject"
+        Effect    = "Allow"
+        Principal = "*"
+        Action    = "s3:GetObject"
+        Resource  = "${aws_s3_bucket.flutter_app_bucket.arn}/*"
+      },
+    ]
+  })
 }
