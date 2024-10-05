@@ -1,0 +1,6 @@
+{
+  "name": "@HelbertCLinUPT/terraform-multi-component-app",
+  "version": "1.0.0",
+  "description": "Terraform Infrastructure as Code for Multi-Component Application",
+  "repository": "https://github.com/UPT-FAING-EPIS/proyecto-si8811a-2024-ii-u1-desarrollo-api-back.git"
+}
