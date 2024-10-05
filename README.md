@@ -69,6 +69,7 @@ Las contribuciones son bienvenidas. Por favor, abre un issue o un pull request p
 
 ## Diagrama
 ![WhatsApp Image 2024-08-31 at 5 00 33 PM](https://github.com/user-attachments/assets/e3c8a7ba-7751-4262-bae1-f04646c828ba)
+https://github.com/UPT-FAING-EPIS/proyecto-si8811a-2024-ii-u1-automatizado-huallpa_apaza/tree/DesarrolloApiBack
 
 ## Licencia
 
