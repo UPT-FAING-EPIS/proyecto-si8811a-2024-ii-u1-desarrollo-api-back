@@ -1,48 +1,90 @@
-variable "resource_group_name" {
-  description = "The name of the resource group"
+variable "aws_region" {
+  description = "AWS region to deploy resources"
+  type        = string
+  default     = "us-west-2"
+}
+variable "mongodb_region" {
+  description = "mongodb region to deploy resources"
+  type        = string
+  default     = "US_WEST_2"
+}
+
+
+variable "environment" {
+  description = "Deployment environment"
+  type        = string
+  default     = "dev"
+}
+
+variable "react_app_bucket_name" {
+  description = "Name of the S3 bucket for React app"
   type        = string
 }
 
-variable "location" {
-  description = "The Azure region to deploy resources"
+variable "flutter_app_bucket_name" {
+  description = "Name of the S3 bucket for Flutter app"
+  type        = string
+}
+
+variable "api_gateway_name" {
+  description = "Name of the API Gateway"
+  type        = string
+}
+
+variable "grafana_instance_type" {
+  description = "Instance type for Grafana server"
+  type        = string
+  default     = "t2.micro"
+}
+
+variable "mongodb_project_name" {
+  description = "The name of the MongoDB Atlas project"
+  type        = string
+}
+
+variable "mongodb_atlas_org_id" {
+  description = "The organization ID for MongoDB Atlas"
+  type        = string
+}
+
+variable "mongodb_cluster_name" {
+  description = "The name of the MongoDB cluster"
+  type        = string
+}
+
+variable "mongodb_username" {
+  description = "The username for the MongoDB database"
+  type        = string
+}
+
+variable "mongodb_password" {
+  description = "The password for the MongoDB database"
+  type        = string
+}
+
+variable "mongodb_database_name" {
+  description = "The name of the database to create in MongoDB"
   type        = string
 }
 
 
 
-variable "flutter_app_storage_account_name" {
-  description = "The name of the storage account for the Flutter app"
-  type        = string
-  default     = "myflutterappsa"
-}
 
-variable "react_app_storage_account_name" {
-  description = "The name of the storage account for the React app"
+variable "mongodb_atlas_public_key" {
+  description = "mongodb_atlas_public_key"
   type        = string
-  default     = "myreactappsa"
 }
-
-variable "acr_name" {
-  description = "The name of the Azure Container Registry"
-  type        = string
-  default     = "mybackendacr"
-}
-
-variable "aks_cluster_name" {
-  description = "The name of the AKS cluster"
-  type        = string
-  default     = "mybackendaks"
-}
-
-variable "subnet_id" {
-  description = "The ID of the subnet for the AKS cluster"
+variable "mongodb_atlas_private_key" {
+  description = "mongodb_atlas_private_key"
   type        = string
 }
 
-variable "backend_node_count" {
-  description = "The number of nodes in the AKS cluster"
-  type        = number
-  default     = 1
+variable "grafana_cloud_api_key" {
+  description = "grafana_cloud_api_key"
+  type        = string
 }
 
-
+variable "ec2_key_name" {
+  description = "The key pair name for EC2 instance"
+  type        = string
+}

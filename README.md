@@ -67,17 +67,9 @@ terraform apply
 
 Las contribuciones son bienvenidas. Por favor, abre un issue o un pull request para sugerir cambios o mejoras.
 
-## Diagramas
-infraestructura
-![image](https://github.com/user-attachments/assets/dcc151d6-8fa7-41b9-8b2f-365c33605daa)
-backend_api
-![image](https://github.com/user-attachments/assets/e5b1350c-7dc3-425f-80f4-f18f67990f34)
-mobile_app
-![image](https://github.com/user-attachments/assets/b6e5dfcf-f6b8-4c55-87ae-b441a6329817)
-web_app
-![image](https://github.com/user-attachments/assets/2d000432-6547-4ad0-87cc-00fc62b18402)
-
-
+## Diagrama
+![WhatsApp Image 2024-08-31 at 5 00 33 PM](https://github.com/user-attachments/assets/e3c8a7ba-7751-4262-bae1-f04646c828ba)
+https://github.com/UPT-FAING-EPIS/proyecto-si8811a-2024-ii-u1-automatizado-huallpa_apaza/tree/DesarrolloApiBack
 
 ## Licencia
 
