@@ -19,7 +19,7 @@ variable "backend_images" {
 resource "aws_instance" "docker_host" {
   ami           = data.aws_ami.amazon_linux_2.id
   instance_type = "t2.micro"
-  key_name      = var.key_name
+  key_name      = intentoterraform
 
   user_data = <<-EOF
               #!/bin/bash
