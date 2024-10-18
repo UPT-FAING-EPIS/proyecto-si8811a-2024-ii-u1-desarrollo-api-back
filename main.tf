@@ -34,7 +34,12 @@ module "grafana_resources" {
   providers = {
     grafana = grafana
   }
+
+  mongodb_atlas_public_key  = var.mongodb_atlas_public_key
+  mongodb_atlas_private_key = var.mongodb_atlas_private_key
+  mongodb_atlas_org_id      = var.mongodb_atlas_org_id
 }
+
 
 module "mongodb" {
   source = "./modules/mongodb"
