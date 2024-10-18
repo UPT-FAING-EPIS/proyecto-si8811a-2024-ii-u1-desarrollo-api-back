@@ -20,50 +20,41 @@ graph TD
     E --> J[grafana]
 ```
 
-Componentes
-Aplicación Móvil (Flutter): Alojada en AWS S3.
-Aplicación Web (React): Alojada en AWS S3.
-Backend API: Desplegada en instancias EC2 con Docker.
-Base de Datos: MongoDB Atlas.
-Monitoreo: Grafana Cloud.
-Variables Principales
-Globales
-environment: Entorno de despliegue.
-ec2_key_name: Nombre de la clave EC2 para acceso SSH.
-Aplicación Móvil (Flutter)
-flutter_app_bucket_name: Nombre del bucket S3 para la app Flutter.
-Aplicación Web (React)
-react_app_bucket_name: Nombre del bucket S3 para la app React.
-Backend API
-backend_images: Lista de imágenes Docker para el backend.
-MongoDB Atlas
-mongodb_atlas_org_id: ID de la organización en MongoDB Atlas.
-mongodb_project_name: Nombre del proyecto en MongoDB Atlas.
-mongodb_cluster_name: Nombre del cluster de MongoDB.
-mongodb_region: Región para el cluster de MongoDB.
-Grafana
-grafana_cloud_api_key: API Key para Grafana Cloud.
-Uso
-Asegúrate de tener Terraform instalado y configurado para trabajar con AWS.
-Clona este repositorio.
-Navega al directorio del proyecto.
-Inicializa Terraform:
-text
-terraform init
+## Componentes
 
-Revisa el plan de ejecución:
-text
-terraform plan
+- **Aplicación Móvil (Flutter)**: Alojada en AWS S3.
+- **Aplicación Web (React)**: Alojada en AWS S3.
+- **Backend API**: Desplegada en instancias EC2 con Docker.
+- **Base de Datos**: MongoDB Atlas.
+- **Monitoreo**: Grafana Cloud.
 
-Aplica la configuración:
-text
-terraform apply
+## Variables Principales
 
-Notas Importantes
-Asegúrate de tener los permisos necesarios en tu cuenta de AWS.
-Revisa y ajusta las variables en variables.tf según tus necesidades específicas.
-Considera usar un backend remoto para el estado de Terraform para facilitar la colaboración.
-Contribuciones
-Las contribuciones son bienvenidas. Por favor, abre un issue o un pull request para sugerir cambios o mejoras.
-Diagrama
+### Globales
+- `environment`: Entorno de despliegue.
+- `ec2_key_name`: Nombre de la clave EC2 para acceso SSH.
 
+### Aplicación Móvil (Flutter)
+- `flutter_app_bucket_name`: Nombre del bucket S3 para la app Flutter.
+
+### Aplicación Web (React)
+- `react_app_bucket_name`: Nombre del bucket S3 para la app React.
+
+### Backend API
+- `backend_images`: Lista de imágenes Docker para el backend.
+
+### MongoDB Atlas
+- `mongodb_atlas_org_id`: ID de la organización en MongoDB Atlas.
+- `mongodb_project_name`: Nombre del proyecto en MongoDB Atlas.
+- `mongodb_cluster_name`: Nombre del cluster de MongoDB.
+- `mongodb_region`: Región para el cluster de MongoDB.
+
+### Grafana
+- `grafana_cloud_api_key`: API Key para Grafana Cloud.
+
+## Uso
+
+1. Asegúrate de tener Terraform instalado y configurado para trabajar con AWS.
+2. Clona este repositorio.
+3. Navega al directorio del proyecto.
+4. Inicializa Terraform: 
