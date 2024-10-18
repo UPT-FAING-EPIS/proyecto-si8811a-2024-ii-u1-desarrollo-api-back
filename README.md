@@ -18,6 +18,7 @@ graph TD
     E --> H[docker_host]
     E --> I[mongodb]
     E --> J[grafana]
+```
 
 Componentes
 Aplicación Móvil (Flutter): Alojada en AWS S3.
