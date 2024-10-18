@@ -58,3 +58,31 @@ graph TD
 2. Clona este repositorio.
 3. Navega al directorio del proyecto.
 4. Inicializa Terraform: 
+terraform init
+text
+5. Revisa el plan de ejecución:
+
+terraform plan
+text
+6. Aplica la configuración:
+
+terraform apply
+text
+
+## Notas Importantes
+
+- Asegúrate de tener los permisos necesarios en tu cuenta de AWS.
+- Revisa y ajusta las variables en `variables.tf` según tus necesidades específicas.
+- Considera usar un backend remoto para el estado de Terraform para facilitar la colaboración.
+
+## Contribuciones
+
+Las contribuciones son bienvenidas. Por favor, abre un issue o un pull request para sugerir cambios o mejoras.
+
+## Diagrama
+![WhatsApp Image 2024-08-31 at 5 00 33 PM](https://github.com/user-attachments/assets/e3c8a7ba-7751-4262-bae1-f04646c828ba)
+https://github.com/UPT-FAING-EPIS/proyecto-si8811a-2024-ii-u1-automatizado-huallpa_apaza/tree/DesarrolloApiBack
+
+## Licencia
+
+[MIT](https://choosealicense.com/licenses/mit/)
