@@ -9,7 +9,7 @@ terraform {
       version = "~> 1.10.0"
     }
     grafana = {
-      source  = "grafana/grafana"
+      source  = "hashicorp/grafana"
       version = "~> 1.28.0"
     }
   }
