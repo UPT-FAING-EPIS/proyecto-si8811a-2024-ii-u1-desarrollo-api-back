@@ -30,6 +30,9 @@ variable "api_gateway_name" {
   description = "Name of the API Gateway"
   type        = string
 }
+variable "cloud_api_key"{
+  type = string
+}
 
 variable "grafana_instance_type" {
   description = "Instance type for Grafana server"
@@ -79,12 +82,21 @@ variable "mongodb_atlas_private_key" {
   type        = string
 }
 
-variable "grafana_cloud_api_key" {
-  description = "grafana_cloud_api_key"
+variable "grafana_auth" {
+  description = "API key for Grafana"
+  type        = string
+  sensitive   = true
+}
+
+variable "grafana_url" {
+  description = "Grafana instance URL"
   type        = string
 }
+
 
 variable "ec2_key_name" {
   description = "The key pair name for EC2 instance"
   type        = string
 }
+
+
