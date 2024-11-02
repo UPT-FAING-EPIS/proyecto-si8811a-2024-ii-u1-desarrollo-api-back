@@ -21,10 +21,6 @@ resource "mongodbatlas_cluster" "cluster" {
   provider_region_name        = var.region
   provider_instance_size_name = "M0"
 
-  # Elimina estas líneas para evitar intentos de actualización
-  # mongo_db_major_version = "5.0"
-  # auto_scaling_disk_gb_enabled = false
-
   lifecycle {
     ignore_changes = all
   }
