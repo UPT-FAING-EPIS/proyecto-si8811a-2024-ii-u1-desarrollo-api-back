@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/proyecto-si8811a-2024-ii-u1-desarrollo-api-back/proyecto-si8811a-2024-ii-u1-desarrollo-api-back.csproj": {}
+    "/home/new/proyecto-si8811a-2024-ii-u1-desarrollo-api-back.csproj": {}
   },
   "projects": {
-    "/home/proyecto-si8811a-2024-ii-u1-desarrollo-api-back/proyecto-si8811a-2024-ii-u1-desarrollo-api-back.csproj": {
+    "/home/new/proyecto-si8811a-2024-ii-u1-desarrollo-api-back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/proyecto-si8811a-2024-ii-u1-desarrollo-api-back/proyecto-si8811a-2024-ii-u1-desarrollo-api-back.csproj",
+        "projectUniqueName": "/home/new/proyecto-si8811a-2024-ii-u1-desarrollo-api-back.csproj",
         "projectName": "proyecto-si8811a-2024-ii-u1-desarrollo-api-back",
-        "projectPath": "/home/proyecto-si8811a-2024-ii-u1-desarrollo-api-back/proyecto-si8811a-2024-ii-u1-desarrollo-api-back.csproj",
+        "projectPath": "/home/new/proyecto-si8811a-2024-ii-u1-desarrollo-api-back.csproj",
         "packagesPath": "/root/.nuget/packages/",
-        "outputPath": "/home/proyecto-si8811a-2024-ii-u1-desarrollo-api-back/obj/",
+        "outputPath": "/home/new/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/root/.nuget/NuGet/NuGet.Config"

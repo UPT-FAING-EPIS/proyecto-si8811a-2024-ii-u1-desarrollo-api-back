@@ -1,7 +1,7 @@
-﻿using Microsoft.Extensions.Options;
-using MongoDB.Driver;
+﻿using MongoDB.Driver;
 using proyecto_si8811a_2024_ii_u1_desarrollo_api_back.Models;
-using proyecto_si8811a_2024_ii_u1_desarrollo_api_back.Settings;
+using System.Globalization;
+using System.Text;
 
 namespace proyecto_si8811a_2024_ii_u1_desarrollo_api_back.Services
 {
@@ -10,11 +10,10 @@ namespace proyecto_si8811a_2024_ii_u1_desarrollo_api_back.Services
         private readonly IMongoCollection<Equipo> _equipos;
         private readonly IMongoCollection<Participante> _participantes;
 
-        public EquipoService(IMongoClient client, IOptions<MongoDBSettings> settings)
+        public EquipoService(MConnection connection)
         {
-            var database = client.GetDatabase(settings.Value.DatabaseName);
-            _equipos = database.GetCollection<Equipo>("Equipo");
-            _participantes = database.GetCollection<Participante>("Participante");
+            _equipos = connection.GetCollection<Equipo>("Equipo");
+            _participantes = connection.GetCollection<Participante>("Participante");
         }
 
         public async Task<List<Equipo>> GetAsync() =>

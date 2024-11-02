@@ -6,16 +6,14 @@ using MongoDB.Driver;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Config MongoDB
+// Configuración de MongoDBSettings desde appsettings.json o variables de entorno
 builder.Services.Configure<MongoDBSettings>(
     builder.Configuration.GetSection("MongoDB"));
 
-builder.Services.AddSingleton<IMongoClient>(s =>
-{
-    var settings = s.GetRequiredService<IOptions<MongoDBSettings>>().Value;
-    return new MongoClient(settings.ConnectionString);
-});
+// Registrar MConnection como singleton para gestionar la conexión a MongoDB
+builder.Services.AddSingleton<MConnection>();
 
+// Configurar CORS
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAllOrigins",
@@ -27,19 +25,20 @@ builder.Services.AddCors(options =>
         });
 });
 
-// Add specific services.
+// Registrar los servicios que dependen de MConnection
 builder.Services.AddSingleton<EquipoService>();
 builder.Services.AddSingleton<ParticipanteService>();
-// Add services to the container.
+
+// Agregar servicios al contenedor.
 builder.Services.AddControllers();
 
-// Configurar Swagger
+// Configurar Swagger para la documentación de la API
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configurar el pipeline HTTP.
 app.UseSwagger();
 app.UseSwaggerUI();
 
@@ -47,8 +46,10 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+// Habilitar CORS para todas las solicitudes
 app.UseCors("AllowAllOrigins");
 
+// Establecer el puerto en el que se ejecutará la aplicación
 app.Urls.Add("http://0.0.0.0:8080");
 
 app.Run();

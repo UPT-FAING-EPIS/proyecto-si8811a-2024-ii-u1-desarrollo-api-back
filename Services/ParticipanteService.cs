@@ -1,12 +1,7 @@
-using proyecto_si8811a_2024_ii_u1_desarrollo_api_back.Models;
-using proyecto_si8811a_2024_ii_u1_desarrollo_api_back.Settings;
-using Microsoft.Extensions.Options;
-using MongoDB.Bson;
 using MongoDB.Driver;
+using proyecto_si8811a_2024_ii_u1_desarrollo_api_back.Models;
 using System.Globalization;
 using System.Text;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace proyecto_si8811a_2024_ii_u1_desarrollo_api_back.Services
 {
@@ -15,11 +10,10 @@ namespace proyecto_si8811a_2024_ii_u1_desarrollo_api_back.Services
         private readonly IMongoCollection<Participante> _participantes;
         private readonly IMongoCollection<Equipo> _equipos;
 
-        public ParticipanteService(IMongoClient client, IOptions<MongoDBSettings> settings)
+        public ParticipanteService(MConnection connection)
         {
-            var database = client.GetDatabase(settings.Value.DatabaseName);
-            _participantes = database.GetCollection<Participante>("Participante");
-            _equipos = database.GetCollection<Equipo>("Equipo");
+            _participantes = connection.GetCollection<Participante>("Participante");
+            _equipos = connection.GetCollection<Equipo>("Equipo");
         }
 
         public async Task<List<Participante>> GetAsync() =>
@@ -28,8 +22,10 @@ namespace proyecto_si8811a_2024_ii_u1_desarrollo_api_back.Services
         public async Task CreateAsync(Participante nuevoParticipante)
         {
             await _participantes.InsertOneAsync(nuevoParticipante);
+
             var filter = Builders<Equipo>.Filter.Eq(e => e.Id, nuevoParticipante.EquipoId);
             var update = Builders<Equipo>.Update.Push(e => e.Participantes, nuevoParticipante.Id);
+
             await _equipos.UpdateOneAsync(filter, update);
         }
 
@@ -42,18 +38,19 @@ namespace proyecto_si8811a_2024_ii_u1_desarrollo_api_back.Services
         public async Task DeleteAsync(string id) =>
             await _participantes.DeleteOneAsync(p => p.Id == id);
 
-	public async Task<List<Participante>> SearchByNameAsync(string nombre)
-	{
-	    string nombreSinAcentos = RemoveAccents(nombre.ToLower());
+        public async Task<List<Participante>> SearchByNameAsync(string nombre)
+        {
+            string nombreSinAcentos = RemoveAccents(nombre.ToLower());
 
-	    var participantes = await _participantes.Find(p => true).ToListAsync();
+            var participantes = await _participantes.Find(p => true).ToListAsync();
 
-	    var resultados = participantes.FindAll(p => 
-	        RemoveAccents(p.Nombre.ToLower()).Contains(nombreSinAcentos)
-	    );
+            var resultados = participantes.FindAll(p =>
+                RemoveAccents(p.Nombre.ToLower()).Contains(nombreSinAcentos)
+            );
 
-	    return resultados;
-	}
+            return resultados;
+        }
+
         public async Task<List<Participante>> GetByEquipoIdAsync(string equipoId) =>
             await _participantes.Find(p => p.EquipoId == equipoId).ToListAsync();
 
