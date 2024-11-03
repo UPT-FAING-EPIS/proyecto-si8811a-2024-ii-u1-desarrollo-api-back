@@ -26,7 +26,12 @@ docker run -d -e MONGO_CONNECTION_STRING="mongodb+srv://<usuario>:<contraseña>@
 MONGO_CONNECTION_STRING: Debes reemplazar el texto , usuario y contraseña , con tus credenciales correctos para MongoDB ; en caso de usar un '@' en la contraseña debes declararlo como '%40'.
 -p 8080:8080: Esto mapea el puerto 8080 del contenedor al puerto 8080 en tu máquina local (El puerto por defecto de la app es 8080).
 Este comando ejecutará la aplicación y conectará a MongoDB usando la cadena de conexión proporcionada.
+POR SI AUN NO ENTIENDE LA WAWITA AQUI TIENES UN EJEMPLO :
 
+```bash
+docker run -d -e MONGO_CONNECTION_STRING="mongodb+srv://HELBERT:AYNOPUEDOCAMBIARUNALINEA%40@cluster0.ip0qn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0" -p 8080:8080 josueamayatorres/api_florales:v1
+```
+En este ejemplo el usuario seria HELBERT y la contraseña seria 'AYNOPUEDOCAMBIARUNALINEA@'
 #### 3. Acceder a la aplicación:
 Una vez que el contenedor esté corriendo, puedes acceder a la aplicación desde tu navegador web en:
 
