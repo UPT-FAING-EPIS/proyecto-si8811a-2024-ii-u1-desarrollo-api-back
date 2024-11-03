@@ -21,9 +21,9 @@ docker pull josueamayatorres/api_florales:v1
 La aplicación requiere una cadena de conexión a MongoDB que debe ser proporcionada como una variable de entorno. Para ejecutar el contenedor, debes pasar esta variable usando el flag -e junto con el puerto en el que deseas exponer la aplicación.
 
 ```bash
-docker run -d -e MONGO_CONNECTION_STRING="mongodb+srv://<usuario>:<contraseña>@cluster0.mongodb.net/<nombre_base_datos>?retryWrites=true&w=majority" -p 8080:8080 josueamayatorres/api_florales:v1
+docker run -d -e MONGO_CONNECTION_STRING="mongodb+srv://<usuario>:<contraseña>@cluster0.ip0qn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0" -p 8080:8080 josueamayatorres/api_florales:v1
 ```
-MONGO_CONNECTION_STRING: Debes reemplazar <usuario>, <contraseña>, y <nombre_base_datos> con tus credenciales y nombre de base de datos correctos para MongoDB.
+MONGO_CONNECTION_STRING: Debes reemplazar <usuario>, <contraseña>, con tus credenciales correctos para MongoDB ; en caso de usar un '@' en la contraseña debes declararlo como '%40'.
 -p 8080:8080: Esto mapea el puerto 8080 del contenedor al puerto 8080 en tu máquina local.
 Este comando ejecutará la aplicación y conectará a MongoDB usando la cadena de conexión proporcionada.
 
