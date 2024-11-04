@@ -24,6 +24,7 @@ La aplicación requiere una cadena de conexión a MongoDB que debe ser proporcio
 docker run -d -e MONGO_CONNECTION_STRING="mongodb+srv://<usuario>:<contraseña>@cluster0.ip0qn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0" -p 8080:8080 josueamayatorres/api_florales:v1
 ```
 MONGO_CONNECTION_STRING: Debes reemplazar el texto , usuario y contraseña , con tus credenciales correctos para MongoDB ; en caso de usar un '@' en la contraseña debes declararlo como '%40'.  
+La zona de 'cluster0.ip0qn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0' debe ir la conexion al Cluster de ___Atlas___ , si es una instancia privada seria el ___DNS/IP___  
 -p 8080:8080: Esto mapea el puerto 8080 del contenedor al puerto 8080 en tu máquina local (El puerto por defecto de la app es 8080).  
 Este comando ejecutará la aplicación y conectará a MongoDB usando la cadena de conexión proporcionada.  
 ___POR SI AUN NO ENTIENDE LA WAWITA AQUI TIENES UN EJEMPLO :___
