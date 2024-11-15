@@ -80,7 +80,7 @@ text
 Las contribuciones son bienvenidas. Por favor, abre un issue o un pull request para sugerir cambios o mejoras.
 
 ## Diagrama
-![infra_diagram.png]
+![Diagrama de Infraestructura](infra_diagram.png)
 https://github.com/UPT-FAING-EPIS/proyecto-si8811a-2024-ii-u1-automatizado-huallpa_apaza/tree/DesarrolloApiBack
 
 ## Licencia
