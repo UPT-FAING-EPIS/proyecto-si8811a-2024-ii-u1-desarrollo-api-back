@@ -8,7 +8,7 @@
 
 **Escuela Profesional de Ingeniería de Sistemas**
 
-**Proyecto *"Juegos Florales - Tópicos de Base de Datos Avanzados"***
+**Proyecto *"Juegos Florales - Tópicos de Base de Datos Avanzados(revisar titulo)"***
 
 Curso: Tópicos de Base de Datos Avanzados
 
@@ -30,7 +30,7 @@ Huallpa Maron, Jesus Antonio (2021071085)
 </center>
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-**Sistema *"Juegos Florales - Tópicos de Base de Datos Avanzados"***
+**Sistema *"Juegos Florales - Tópicos de Base de Datos Avanzados(revisar titulo)"***
 
 Informe de Factibilidad
 
@@ -78,7 +78,7 @@ Versión *{1.0}*
 
 1.1. Nombre del proyecto
    
-    "Juegos Florales - Tópicos de Base de Datos Avanzados"
+    "Juegos Florales - Tópicos de Base de Datos Avanzados(revisar titulo)"
     
 1.2. Duración del proyecto
 
@@ -86,7 +86,7 @@ Versión *{1.0}*
 
 1.3. Descripción
 
-    -El proyecto "Juegos Florales - Tópicos de Base de Datos Avanzados" se centra en el desarrollo de una serie de aplicaciones web y móviles diseñadas para apoyar las actividades del día festivo de los Juegos Florales en la Universidad Privada de Tacna. Estas aplicaciones tienen como objetivo facilitar la organización, gestión y participación en los eventos del día, brindando una experiencia interactiva y moderna para los usuarios.
+    -El proyecto "Juegos Florales - Tópicos de Base de Datos Avanzados(revisar titulo)" se centra en el desarrollo de una serie de aplicaciones web y móviles diseñadas para apoyar las actividades del día festivo de los Juegos Florales en la Universidad Privada de Tacna. Estas aplicaciones tienen como objetivo facilitar la organización, gestión y participación en los eventos del día, brindando una experiencia interactiva y moderna para los usuarios.
 
     -En este informe, se detallan los costos asociados a los servicios utilizados para la infraestructura del proyecto, tales como AWS, MongoDB, entre otros. Además, se analizan los gastos adicionales vinculados al despliegue y mantenimiento de la infraestructura, asegurando una solución escalable y eficiente para el evento.
 
@@ -131,7 +131,7 @@ Versión *{1.0}*
 
     3.2. Consideraciones de hardware y software
 
-        Para el proyecto "Juegos Florales - Tópicos de Base de Datos Avanzados", es fundamental garantizar que la infraestructura tecnológica cuente con los recursos necesarios tanto en hardware como en software para su correcto desarrollo, implementación y operación.
+        Para el proyecto "Juegos Florales - Tópicos de Base de Datos Avanzados(revisar titulo)", es fundamental garantizar que la infraestructura tecnológica cuente con los recursos necesarios tanto en hardware como en software para su correcto desarrollo, implementación y operación.
 
       Hardware
 
@@ -234,16 +234,9 @@ Versión *{1.0}*
 
     4.2. <span id="_Toc52661351" class="anchor"></span>Factibilidad Económica
 
-   El propósito del estudio de viabilidad económica, es determinar los beneficios económicos del proyecto o sistema propuesto para la organización, en contraposición con los costos.
-        Como se mencionó anteriormente en el estudio de factibilidad técnica wvaluar si la institución (departamento de TI) cuenta con las herramientas necesarias para la implantación del sistema y evaluar si la propuesta requiere o no de una inversión inicial en infraestructura informática.
-        Se plantearán los costos del proyecto.
-        Costeo del Proyecto: Consiste en estimar los costos de los recursos Humanos, materiales o consumibles y/o máquinas) directos para completar las actividades del proyecto}.*
-
-   Definir los siguientes costos:
-
       4.2.1. Costos Generales
 
-      Los costos generales son todos los gastos realizados en accesorios y material de oficina y de uso diario, necesarios para los procesos, tales como, papeles, plumas, cartuchos de impresora, marcadores, computadora etc. Colocar tabla de costos.
+        Los costos generales son todos los gastos realizados en accesorios y material de oficina y de uso diario, necesarios para los procesos, tales como, papeles, plumas, cartuchos de impresora, marcadores, computadora etc. Colocar tabla de costos.
    
    |Material|Cantidad|Costo Unitario (S/)|
    | :-: | :- | :- |
