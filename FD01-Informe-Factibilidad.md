@@ -27,8 +27,6 @@ Huallpa Maron, Jesus Antonio (2021071085)
 2024
  
 
-**  
-**
 </center>
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
@@ -112,9 +110,9 @@ Versión *{1.0}*
 
 2. <span id="_Toc52661347" class="anchor"></span>**Riesgos**
 
-    -Retrasos en el Cronograma: Los retrasos en el desarrollo, pruebas o implementación podrían afectar la fecha de finalización del proyecto, especialmente si dependen de factores externos como la disponibilidad de hardware o la integración con sistemas existentes.
-   
-    -Definición Inadecuada de Requisitos: Cambios en los requisitos durante el desarrollo podrían llevar a la necesidad de rediseñar partes del sistema, afectando el alcance y el tiempo del proyecto.  
+        -Retrasos en el Cronograma: Los retrasos en el desarrollo, pruebas o implementación podrían afectar la fecha de finalización del proyecto, especialmente si dependen de factores externos como la disponibilidad de hardware o la integración con sistemas existentes.
+      
+        -Definición Inadecuada de Requisitos: Cambios en los requisitos durante el desarrollo podrían llevar a la necesidad de rediseñar partes del sistema, afectando el alcance y el tiempo del proyecto.  
    
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
@@ -122,89 +120,116 @@ Versión *{1.0}*
 
     3.1. Planteamiento del problema
 
-      Actualmente, la Universidad Privada de Tacna enfrenta diversas dificultades para gestionar de manera eficiente eventos importantes como los Juegos Florales. La ausencia de una infraestructura tecnológica adecuada limita la capacidad de organización, lo que genera problemas en la administración de actividades, participantes y recursos. Estas deficiencias afectan directamente la calidad y eficiencia del evento.
+        Actualmente, la Universidad Privada de Tacna enfrenta diversas dificultades para gestionar de manera eficiente eventos importantes como los Juegos Florales. La ausencia de una infraestructura tecnológica adecuada limita la capacidad de organización, lo que genera problemas en la administración de actividades, participantes y recursos. Estas deficiencias afectan directamente la calidad y eficiencia del evento.
 
-      Además, no existe una plataforma digital centralizada que permita conectar de manera interactiva a los participantes con las actividades del evento. Esto reduce las posibilidades de interacción y dificulta el acceso a información en tiempo real, afectando tanto la experiencia de los usuarios como la imagen general del evento.
+        Además, no existe una plataforma digital centralizada que permita conectar de manera interactiva a los participantes con las actividades del evento. Esto reduce las posibilidades de interacción y dificulta el acceso a información en tiempo real, afectando tanto la experiencia de los usuarios como la imagen general del evento.
 
-      Por otro lado, los procesos manuales predominantes, como la inscripción y el seguimiento de participantes, son propensos a errores y generan retrasos innecesarios. Esto no solo aumenta la carga administrativa, sino que también limita la capacidad de escalar el evento en caso de un mayor número de participantes.
+        Por otro lado, los procesos manuales predominantes, como la inscripción y el seguimiento de participantes, son propensos a errores y generan retrasos innecesarios. Esto no solo aumenta la carga administrativa, sino que también limita la capacidad de escalar el evento en caso de un mayor número de participantes.
 
-      Finalmente, la falta de herramientas para recopilar y analizar datos impide realizar un diagnóstico adecuado sobre el desempeño del evento. Esto limita la posibilidad de implementar mejoras basadas en información objetiva, afectando la organización de ediciones futuras. Estas problemáticas resaltan la necesidad urgente de adoptar una solución tecnológica moderna, escalable y eficiente.
+        Finalmente, la falta de herramientas para recopilar y analizar datos impide realizar un diagnóstico adecuado sobre el desempeño del evento. Esto limita la posibilidad de implementar mejoras basadas en información objetiva, afectando la organización de ediciones futuras. Estas problemáticas resaltan la necesidad urgente de adoptar una solución tecnológica moderna, escalable y eficiente.
 
 
     3.2. Consideraciones de hardware y software
 
-   Para el proyecto "Juegos Florales - Tópicos de Base de Datos Avanzados", es fundamental garantizar que la infraestructura tecnológica cuente con los recursos necesarios tanto en hardware como en software para su correcto desarrollo, implementación y operación.
+        Para el proyecto "Juegos Florales - Tópicos de Base de Datos Avanzados", es fundamental garantizar que la infraestructura tecnológica cuente con los recursos necesarios tanto en hardware como en software para su correcto desarrollo, implementación y operación.
 
-Hardware
-Infraestructura en la Nube (AWS):
+      Hardware
 
-Instancias EC2:
-Tipo: t2.micro para pruebas y entornos de desarrollo.
-Tipo: t3.medium o superior para producción, dependiendo de la carga esperada.
-Almacenamiento: 30 GB de EBS mínimo para cada instancia.
-S3 Buckets: Espacio suficiente para alojar archivos de aplicaciones web y móviles.
-MongoDB Atlas: Cluster básico para desarrollo y cluster escalable para producción.
-Dispositivos del Usuario Final:
+        Infraestructura en la Nube (AWS):
 
-Móviles: Compatibilidad con Android 8.0/iOS 12 o superior.
-Escritorio: PCs con navegadores modernos (Chrome, Firefox, Edge) y al menos 4 GB de RAM.
-Software
-Herramientas para Desarrollo e Implementación:
+        Instancias EC2:
 
-Terraform (versión 1.0 o superior) para la gestión de infraestructura como código.
-Docker para contenerización de las aplicaciones.
-Visual Studio Code para la codificación de aplicaciones web (React) y móviles (Flutter).
-Infraestructura en la Nube:
+        Tipo: t2.micro para pruebas y entornos de desarrollo.
+        Tipo: t3.medium o superior para producción, dependiendo de la carga esperada.
+        Almacenamiento: 30 GB de EBS mínimo para cada instancia.
+        S3 Buckets: Espacio suficiente para alojar archivos de aplicaciones web y móviles.
+        MongoDB Atlas: Cluster básico para desarrollo y cluster escalable para producción.
+          
+        Dispositivos del Usuario Final:
 
-AWS CLI para gestionar servicios en AWS desde la línea de comandos.
-Proveedores de Terraform:
-HashiCorp AWS Provider (~> 4.0).
-MongoDB Atlas Provider (~> 1.0).
-Tecnologías para Aplicaciones:
+        Móviles: Compatibilidad con Android 8.0/iOS 12 o superior.
+        Escritorio: PCs con navegadores modernos (Chrome, Firefox, Edge) y al menos 4 GB de RAM.
 
-React para el desarrollo de la aplicación web.
-Flutter para la aplicación móvil, asegurando compatibilidad multiplataforma.
-MongoDB como base de datos para el almacenamiento y gestión de datos.
+      Software
+
+        Herramientas para Desarrollo e Implementación:
+
+        Terraform (versión 1.0 o superior) para la gestión de infraestructura como código.
+        Docker para contenerización de las aplicaciones.
+        Visual Studio Code para la codificación de aplicaciones web (React) y móviles (Flutter).
+
+        Infraestructura en la Nube:
+
+        AWS CLI para gestionar servicios en AWS desde la línea de comandos.
+        Proveedores de Terraform:
+        HashiCorp AWS Provider (~> 4.0).
+        MongoDB Atlas Provider (~> 1.0).
+
+        Tecnologías para Aplicaciones:
+
+        React para el desarrollo de la aplicación web.
+        Flutter para la aplicación móvil, asegurando compatibilidad multiplataforma.
+        MongoDB como base de datos para el almacenamiento y gestión de datos.
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 4. <span id="_Toc52661349" class="anchor"></span>**Estudio de
     Factibilidad**
 
-    Describir los resultados que esperan alcanzar del estudio de factibilidad, las actividades que se realizaron para preparar la evaluación de factibilidad y por quien fue aprobado.
+        Describir los resultados que esperan alcanzar del estudio de factibilidad, las actividades que se realizaron para preparar la evaluación de factibilidad y por quien fue aprobado.
 
     4.1. <span id="_Toc52661350" class="anchor"></span>Factibilidad Técnica
 
-        Evaluación del Hardware
-         Dispositivos del Usuario Final:
-          -Los usuarios (estudiantes, docentes y administradores) podrán acceder a las aplicaciones del proyecto "Juegos Florales" desde dispositivos móviles modernos (Android 8.0/iOS 12 o superior) o computadoras de escritorio con navegadores actualizados (Chrome, Firefox, Edge).
+      Evaluación del Hardware
+
+        Dispositivos del Usuario Final:
+
+        Los usuarios (estudiantes, docentes y administradores) podrán acceder a las aplicaciones del proyecto "Juegos Florales" desde dispositivos móviles modernos (Android 8.0/iOS 12 o superior) o computadoras de escritorio con navegadores actualizados (Chrome, Firefox, Edge).
    
-         Infraestructura en la Nube (AWS):
-          -Se utilizarán instancias EC2 de tipo t2.micro para el entorno de desarrollo y t3.medium para producción, con discos EBS de 30 GB para garantizar el rendimiento y almacenamiento necesario. Además, los S3 Buckets soportarán la distribución de contenido estático como aplicaciones React y Flutter.
+        Infraestructura en la Nube (AWS):
+
+        Se utilizarán instancias EC2 de tipo t2.micro para el entorno de desarrollo y t3.medium para producción, con discos EBS de 30 GB para garantizar el rendimiento y almacenamiento necesario. Además, los S3 Buckets soportarán la distribución de contenido estático como aplicaciones React y Flutter.
    
         Bases de Datos:
-          -MongoDB Atlas proporcionará clústeres escalables con configuración básica para desarrollo y robustez para producción, permitiendo un manejo eficiente de los datos del evento.
+
+        MongoDB Atlas proporcionará clústeres escalables con configuración básica para desarrollo y robustez para producción, permitiendo un manejo eficiente de los datos del evento.
    
-         Evaluación del Software
-           Sistemas Operativos:
+      Evaluación del Software
+
+        Sistemas Operativos:
+
         Las instancias EC2 en AWS utilizarán distribuciones Linux (Ubuntu o Amazon Linux 2) por su compatibilidad y rendimiento. Para el desarrollo local, se emplearán entornos compatibles con Windows, macOS o Linux.
-            Frameworks y Herramientas:
-            React para la aplicación web, facilitando una experiencia interactiva y moderna.
-            Flutter para el desarrollo de la aplicación móvil, asegurando compatibilidad multiplataforma.
-            Docker para la contenerización y estandarización del entorno de desarrollo y despliegue.
-            Terraform para la creación y gestión de la infraestructura como código, garantizando replicabilidad y control.
-          Monitoreo y Visualización:
-          Grafana será utilizado para monitorear el rendimiento de los servicios en tiempo real, asegurando una operación óptima durante el evento.
-       Infraestructura de Red
-          Conectividad a Internet:
-          La infraestructura de AWS cuenta con conectividad robusta y escalable, asegurando alta disponibilidad y estabilidad para manejar múltiples usuarios simultáneamente.
-          Configuración de Red Virtual:
-          Se implementarán VPCs (Virtual Private Clouds) en AWS para segmentar los recursos, con subredes públicas para los servicios de front-end y subredes privadas para bases de datos y servicios críticos.
-        Dominio y Gestión de Recursos
-          Gestión Centralizada:
-          El proyecto utilizará los servicios de IAM (Identity and Access Management) de AWS para gestionar usuarios y permisos de manera segura.
-          Dominio Institucional:
-          Se integrará un dominio personalizado para facilitar el acceso a las aplicaciones del evento, mejorando la profesionalidad y accesibilidad.
+
+        Frameworks y Herramientas:
+
+        React para la aplicación web, facilitando una experiencia interactiva y moderna.
+        Flutter para el desarrollo de la aplicación móvil, asegurando compatibilidad multiplataforma.
+        Docker para la contenerización y estandarización del entorno de desarrollo y despliegue.
+        Terraform para la creación y gestión de la infraestructura como código, garantizando replicabilidad y control.
+          
+        Monitoreo y Visualización:
+
+        Grafana será utilizado para monitorear el rendimiento de los servicios en tiempo real, asegurando una operación óptima durante el evento.
+
+      Infraestructura de Red
+
+        Conectividad a Internet:
+
+        La infraestructura de AWS cuenta con conectividad robusta y escalable, asegurando alta disponibilidad y estabilidad para manejar múltiples usuarios simultáneamente.
+
+        Configuración de Red Virtual:
+
+        Se implementarán VPCs (Virtual Private Clouds) en AWS para segmentar los recursos, con subredes públicas para los servicios de front-end y subredes privadas para bases de datos y servicios críticos.
+
+      Dominio y Gestión de Recursos
+
+        Gestión Centralizada:
+
+        El proyecto utilizará los servicios de IAM (Identity and Access Management) de AWS para gestionar usuarios y permisos de manera segura.
+          
+        Dominio Institucional:
+
+        Se integrará un dominio personalizado para facilitar el acceso a las aplicaciones del evento, mejorando la profesionalidad y accesibilidad.
 
 
     4.2. <span id="_Toc52661351" class="anchor"></span>Factibilidad Económica
