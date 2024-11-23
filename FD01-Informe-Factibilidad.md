@@ -26,20 +26,20 @@ Huallpa Maron, Jesus Antonio (2021071085)
 
 2024
  
-
+**  
+**
 </center>
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 **Sistema *"Infraestructura Tecnológica para el Evento Juegos Florales de la Universidad Privada de Tacna"***
 
-Informe de Factibilidad
+**Versión:** 1.0
 
-Versión *{1.0}*
+| Versión | Hecha por | Revisada por | Aprobada por | Fecha       | Motivo            |
+|:-------:|:---------:|:------------:|:------------:|:-----------:|:------------------:|
+| 1.0     | MPV     | ELV          | ARV          | 24/08/2024  | Versión Original   |
 
-|CONTROL DE VERSIONES||||||
-| :-: | :- | :- | :- | :- | :- |
-|Versión|Hecha por|Revisada por|Aprobada por|Fecha|Motivo|
-|1\.0|MPV|ELV|ARV|24/08/2024|Versión Original|
+---
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 

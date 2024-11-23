@@ -38,7 +38,7 @@ Huallpa Maron, Jesus Antonio (2021071085)
 
 | Versión | Hecha por | Revisada por | Aprobada por | Fecha       | Motivo            |
 |:-------:|:---------:|:------------:|:------------:|:-----------:|:------------------:|
-| 1.0     | Huallpa     | ELV          | ARV          | 24/08/2024  | Versión Original   |
+| 1.0     | MPV     | ELV          | ARV          | 24/08/2024  | Versión Original   |
 
 ---
 
