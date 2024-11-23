@@ -8,7 +8,7 @@
 
 **Escuela Profesional de Ingeniería de Sistemas**
 
-**Proyecto *"Juegos Florales - Tópicos de Base de Datos Avanzados"***
+**Proyecto *"Infraestructura Tecnológica para el Evento Juegos Florales de la Universidad Privada de Tacna"***
 
 Curso: Tópicos de Base de Datos Avanzados
 
@@ -32,7 +32,7 @@ Huallpa Maron, Jesus Antonio (2021071085)
 </center>
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-**Sistema *"Juegos Florales - Tópicos de Base de Datos Avanzados"***
+**Sistema *"Infraestructura Tecnológica para el Evento Juegos Florales de la Universidad Privada de Tacna"***
 
 **Versión:** 1.0
 
@@ -99,37 +99,57 @@ e) Estandaraes de calidad y seguridad	](#_toc394513800)42
 
 ## 1. Introducción <span id="introduccion" class="anchor"></span>
 
-    El presente documento describe la visión del proyecto "Juegos Florales - Tópicos de Base de Datos Avanzados", diseñado para transformar la gestión del evento Juegos Florales en la Universidad Privada de Tacna. Este proyecto propone la implementación de una infraestructura tecnológica moderna basada en servicios de AWS y herramientas avanzadas como Terraform, MongoDB Atlas, y Grafana.
+    El presente documento describe la visión del proyecto "Infraestructura Tecnológica para el Evento Juegos Florales de la Universidad Privada de Tacna", cuyo objetivo principal es transformar la gestión del evento Juegos Florales mediante el uso de tecnologías avanzadas. Este proyecto propone la implementación de una infraestructura tecnológica moderna que hará uso de servicios de AWS (Amazon Web Services), así como herramientas especializadas como Terraform, MongoDB Atlas y Grafana, con el fin de optimizar los procesos de planificación, ejecución y monitoreo del evento.
 
-    El enfoque principal es proporcionar un entorno escalable, seguro y automatizado que optimice los procesos de planificación, ejecución y monitoreo del evento, garantizando una experiencia más eficiente y enriquecedora para los participantes y organizadores.
+    El enfoque de la solución es crear un entorno escalable, seguro y automatizado que permita agilizar y mejorar la organización del evento, asegurando una experiencia más eficiente y enriquecedora tanto para los participantes como para los organizadores. Con la implementación de esta infraestructura, se busca proporcionar un marco robusto que facilite la gestión de las operaciones en tiempo real, garantizando la disponibilidad y el rendimiento necesarios para eventos de gran escala.
 
-    Este documento servirá como base para alinear las expectativas del equipo técnico, los interesados y los usuarios finales, estableciendo los objetivos, el alcance y los resultados esperados del proyecto.
+    Este documento tiene como propósito principal alinear las expectativas de todos los interesados, el equipo técnico y los usuarios finales. Además, establece de manera clara los objetivos, el alcance y los resultados esperados del proyecto, proporcionando una guía fundamental para la implementación exitosa de la infraestructura tecnológica.
 
 ### 1.1 Propósito <span id="proposito" class="anchor"></span>
 
-    El presente documento de visión define los objetivos y el alcance del proyecto "Juegos Florales - Tópicos de Base de Datos Avanzados". Su propósito principal es implementar una infraestructura tecnológica basada en AWS y Terraform para optimizar la gestión y ejecución del evento, proporcionando una solución escalable, automatizada y de alto rendimiento. Este documento busca alinear las expectativas de los interesados y guiar el desarrollo técnico del proyecto.
+    El presente documento de visión tiene como objetivo principal definir los objetivos y el alcance del proyecto "Infraestructura Tecnológica para el Evento Juegos Florales de la Universidad Privada de Tacna". Su propósito es implementar una infraestructura tecnológica moderna basada en AWS (Amazon Web Services) y Terraform, con el fin de optimizar la gestión y ejecución del evento. Esta infraestructura proporcionará una solución escalable, automatizada y de alto rendimiento, garantizando una mayor eficiencia en todos los procesos involucrados.
+
+    Este documento busca alinear las expectativas de los interesados, asegurando una comprensión común de los objetivos del proyecto. Asimismo, servirá como guía para el desarrollo técnico del sistema, permitiendo un enfoque claro y coherente en la implementación de la infraestructura tecnológica.
 
 ### 1.2 Alcance <span id="alcance" class="anchor"></span>
 
-    Área de Implementación: Gestión de la infraestructura tecnológica del evento Juegos Florales.
-    Soluciones Propuestas: Automatización de despliegue, monitoreo en tiempo real y administración de aplicaciones web y móviles.
-    Resultados Esperados: Optimización en la organización del evento, escalabilidad de servicios y mejora en la experiencia de usuarios.
+    Área de Implementación: Gestión integral de la infraestructura tecnológica para el evento Juegos Florales de la Universidad Privada de Tacna. Esto incluye la implementación, automatización y mantenimiento de los sistemas tecnológicos necesarios para garantizar el buen desarrollo del evento.
+
+    Soluciones Propuestas:
+
+    Automatización del despliegue: Implementación de herramientas como Terraform para automatizar la configuración y gestión de la infraestructura.
+    Monitoreo en tiempo real: Uso de plataformas como Grafana para supervisar el rendimiento de la infraestructura y aplicaciones en tiempo real, asegurando su disponibilidad y fiabilidad.
+    Administración de aplicaciones web y móviles: Desarrollo y gestión de aplicaciones para facilitar la interacción de los participantes y organizadores, con un enfoque en la escalabilidad y accesibilidad.
+
+    Resultados Esperados:
+
+    Optimización de la organización del evento mediante la automatización de procesos.
+    Escalabilidad de los servicios para soportar un número creciente de usuarios y datos durante el evento.
+    Mejora significativa en la experiencia de los usuarios, garantizando una plataforma robusta, ágil y accesible.
 
 ### 1.3 Definiciones, Siglas y Abreviaturas <span id="definiciones" class="anchor"></span>
 
-    Documentación oficial de Terraform: terraform.io/docs
-    Documentación de AWS: aws.amazon.com/documentation
+    AWS: Amazon Web Services, plataforma en la nube que ofrece soluciones de infraestructura escalables y servicios de computación, almacenamiento y bases de datos.
+    Terraform: Herramienta de infraestructura como código (IaC) que permite automatizar el despliegue y la gestión de recursos en la nube.
+    MongoDB Atlas: Plataforma de base de datos NoSQL gestionada, basada en la nube, que permite la implementación y el escalado de bases de datos MongoDB.
+    Grafana: Herramienta de análisis y monitoreo que proporciona visualizaciones en tiempo real sobre el rendimiento de la infraestructura y las aplicaciones.
+    EC2: Amazon Elastic Compute Cloud, servicio de computación escalable que permite ejecutar servidores virtuales en la nube.
+    S3: Amazon Simple Storage Service, servicio de almacenamiento de objetos en la nube para almacenar y recuperar cualquier cantidad de datos.
+
 ### 1.4 Referencias <span id="referencias" class="anchor"></span>
 
     Documentación de psutil: https://psutil.readthedocs.io
-    
+    Documentación oficial de psutil, una librería utilizada para la gestión y monitoreo de recursos del sistema en aplicaciones Python.
+
     Guías de Python: https://docs.python.org
-    
-    Manual de la Universidad Privada de Tacna: Normas y permisos para el uso de laboratorios.
+    Guías oficiales de Python, proporcionando documentación detallada sobre las funcionalidades del lenguaje y sus módulos.
+
+    Manual de la Universidad Privada de Tacna:
+    Normas y permisos para el uso de laboratorios y equipos informáticos en la Universidad Privada de Tacna.
 
 ### 1.5 Visión General <span id="vision-general" class="anchor"></span>
 
-    El proyecto implementará una solución tecnológica que incluirá instancias EC2, bases de datos en MongoDB Atlas y almacenamiento S3 para aplicaciones web y móviles. El sistema estará diseñado para garantizar alta disponibilidad, monitoreo continuo y un despliegue automatizado.
+    El proyecto implementará una solución tecnológica avanzada que incluye instancias EC2 de AWS, bases de datos en MongoDB Atlas y almacenamiento S3, proporcionando una infraestructura escalable, segura y de alto rendimiento para las aplicaciones web y móviles del evento. El sistema está diseñado para garantizar alta disponibilidad, monitoreo continuo y un despliegue automatizado utilizando herramientas como Terraform. Esto permitirá una gestión eficiente y confiable del evento, asegurando un funcionamiento continuo y la optimización de los recursos en tiempo real.
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
@@ -137,15 +157,15 @@ e) Estandaraes de calidad y seguridad	](#_toc394513800)42
 
 ### 2.1 Oportunidad de negocio <span id="oportunidad-de-negocio" class="anchor"></span>
 
-    El evento Juegos Florales carece de un sistema digital centralizado que facilite su organización. Este proyecto busca aprovechar la tecnología para automatizar procesos, mejorar la eficiencia y proporcionar una experiencia interactiva y dinámica para los participantes.
+    El evento Juegos Florales actualmente no dispone de un sistema digital centralizado que facilite su gestión y organización. Este proyecto se presenta como una oportunidad para integrar una infraestructura tecnológica que permita automatizar los procesos asociados al evento, mejorando la eficiencia operativa y optimizando el flujo de trabajo. Al incorporar herramientas tecnológicas avanzadas, se busca no solo agilizar la planificación y ejecución del evento, sino también proporcionar una experiencia interactiva y dinámica para los participantes, elevando la calidad del evento y fortaleciendo su impacto.
 
 ### 2.2 Definición del problema <span id="definicion-del-problema" class="anchor"></span>
 
-| **LA FALTA** | La ausencia de un sistema automatizado de monitoreo de red y hardware en las computadoras del laboratorio conlleva a dificultades para detectar problemas de rendimiento, ineficiencias en la gestión de recursos y mantenimiento reactivo. |
+| **LA FALTA** | La falta de un sistema digital centralizado y eficiente para la organización del evento Juegos Florales. |
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **LA NECESIDAD** | La necesidad de un monitoreo continuo y detallado se vuelve crucial para asegurar la eficiencia operativa, la optimización de recursos y la reducción de tiempos de inactividad, mejorando la calidad del soporte técnico. |
-| **EL PROBLEMA** | La falta de un sistema de monitoreo automatizado provoca una falta de visibilidad sobre el uso de recursos, lo que puede llevar a un uso ineficiente de las computadoras, mayor consumo de energía, y un soporte técnico reactivo. |
-| **LA SOLUCIÓN** | Implementar una herramienta de monitoreo que permita la evaluación continua del rendimiento de red y hardware, proporcionando datos en tiempo real y alertas que faciliten la gestión proactiva y la optimización de recursos. |
+| **LA NECESIDAD** |Se necesita una infraestructura tecnológica moderna y escalable que permita automatizar procesos, mejorar la gestión y facilitar la interacción entre los organizadores y participantes.|
+| **EL PROBLEMA** | La organización del evento es compleja, manual y propensa a errores, lo que afecta la eficiencia, el monitoreo en tiempo real y la experiencia de los usuarios. |
+| **LA SOLUCIÓN** | Implementar una infraestructura tecnológica basada en servicios de AWS, Terraform y herramientas como MongoDB Atlas y Grafana para automatizar procesos, proporcionar monitoreo continuo y garantizar la alta disponibilidad. |
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
@@ -153,50 +173,49 @@ e) Estandaraes de calidad y seguridad	](#_toc394513800)42
 
 ### 3.1 Resumen de los interesados <span id="resumen-interesados" class="anchor"></span>
 
-| **Nombre**      | **Descripción** | **Responsabilidad** |
-|-----------------|-----------------|---------------------|
-| **Área de TI**  | Encargada de la gestión y mantenimiento de la infraestructura tecnológica. | Gestionar y optimizar los recursos tecnológicos, asegurar el funcionamiento continuo de los equipos. |
-| **Soporte Técnico** | Personal que realiza el mantenimiento y soporte de las computadoras en los laboratorios. | Diagnosticar y resolver problemas técnicos, realizar mantenimientos preventivos y correctivos. |
-| **Estudiantes** | Usuarios finales que utilizan las computadoras para sus actividades académicas. | Realizar actividades académicas utilizando los recursos tecnológicos proporcionados. |
-| **Administración** | Encargada de la supervisión general de las operaciones de la universidad. | Optimizar los costos operativos, mejorar la calidad del servicio educativo. |
+| **Nombre**               | **Descripción**                                                      | **Responsabilidad**                                                                                  |
+|--------------------------|----------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
+| **Administrador**         | Responsable de la supervisión y gestión general del evento.           | Coordinar y gestionar todos los aspectos logísticos del evento, asegurando su correcto desarrollo.    |
+| **Estudiante**            | Participante final del evento.                                        | Registrarse en el evento, participar activamente y utilizar los recursos tecnológicos proporcionados. |
+| **Bienestar Universitario** | Área encargada de organizar y coordinar eventos culturales y académicos. | Supervisar y organizar el evento, promover la participación estudiantil y asegurar la logística.      |
 
 ### 3.2 Resumen de los usuarios <span id="resumen-usuarios" class="anchor"></span>
 
-| **Nombre**      | **Descripción** | **Responsabilidad** |
-|-----------------|-----------------|---------------------|
-| **Soporte Técnico** | Interactúa con todas las funcionalidades del sistema para el monitoreo, diagnóstico y resolución de problemas. | Monitorear el rendimiento de las computadoras, realizar mantenimientos preventivos y correctivos. |
-| **Área de TI**  | Utiliza los reportes generados por el sistema para la planificación del mantenimiento y las actualizaciones. | Gestionar los recursos tecnológicos, planificar mantenimientos y actualizaciones. |
-| **Estudiantes** | Utilizan las computadoras para realizar actividades académicas, beneficiándose de un mejor rendimiento y menos interrupciones. | Utilizar los recursos tecnológicos para actividades académicas y proyectos prácticos. |
+| **Nombre**               | **Descripción**                                                       | **Responsabilidad**                                                                 |
+|--------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| **Bienestar Universitario** | Gestiona las inscripciones y el seguimiento de los estudiantes para el evento. | Supervisar la inscripción de los estudiantes en el evento y garantizar que reciban la información necesaria. |
+| **Estudiantes**          | Participan en el evento y utilizan la plataforma para registrarse y recibir notificaciones. | Registrarse en el evento, recibir actualizaciones y participar activamente en el evento. |
+
 
 ### 3.3 Entorno de usuario <span id="entorno-usuario" class="anchor"></span>
 
-    Los usuarios interactúan con el sistema a través de una interfaz web intuitiva y fácil de usar. El sistema estará accesible desde navegadores web, permitiendo el monitoreo en tiempo real, la generación de informes y la configuración de alertas.
+    El entorno de usuario para el sistema "Infraestructura Tecnológica para el Evento Juegos Florales de la Universidad Privada de Tacna" está compuesto por una serie de dispositivos y plataformas tecnológicas que permitirán una interacción fluida entre los usuarios y los componentes del sistema. Este entorno debe estar diseñado para garantizar un acceso eficiente y seguro a las funcionalidades del sistema. 
 
 ### 3.4 Perfiles de los interesados <span id="perfiles-interesados" class="anchor"></span>
 
-| **Representante** | **Descripción** | **Tipo** | **Responsabilidades** | **Criterios de éxito** |
-|-------------------|-----------------|----------|-----------------------|------------------------|
-| **Área de TI**    | Encargados de la administración y mantenimiento de la infraestructura tecnológica. | Administrador | Configurar usuarios, permisos, horarios y generar informes. | Gestionar con éxito las funcionalidades del sistema. |
-| **Administración** | Supervisores de las operaciones generales de la universidad y la gestión presupuestaria. | Supervisor | Asegurar que los costos operativos sean optimizados y la calidad del servicio educativo se mantenga alta. | Eficiencia en la operación de la infraestructura tecnológica. |
+| **Perfil**               | **Descripción**                                                                 | **Tipo**           | **Responsabilidades**                                                      | **Criterios de éxito**                                                    |
+|--------------------------|---------------------------------------------------------------------------------|--------------------|---------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| **Administrador**        | Responsable de la planificación, gestión y supervisión general de todos los aspectos del evento. | Administrador      | Coordinar las tareas del equipo, supervisar la implementación de tecnología y asegurar la eficiencia organizativa. | La correcta implementación de las tecnologías y satisfacción de los participantes. |
+| **Estudiantes Participantes** | Usuarios finales que se registran para participar en el evento.                              | Usuario Final      | Registrarse en la plataforma, obtener información relevante del evento y recibir actualizaciones. | Acceso efectivo a la información y satisfacción con la experiencia del evento. |
+| **Bienestar Universitario** | Área encargada de organizar y coordinar eventos dentro de la universidad.                          | Organizador        | Diseñar actividades, fomentar la participación estudiantil y garantizar el desarrollo óptimo del evento. | Desarrollo exitoso del evento y alta participación de los estudiantes.     |
 
 ### 3.5 Perfiles de los Usuarios <span id="perfiles-usuarios" class="anchor"></span>
 
-| **Representante** | **Descripción** | **Tipo** | **Responsabilidades** | **Criterios de éxito** | **Implicación** |
-|-------------------|-----------------|----------|-----------------------|------------------------|----------------|
-| **Soporte Técnico** | Personal técnico encargado del monitoreo, diagnóstico y resolución de problemas. | Técnico | Configurar el sistema, gestionar el rendimiento de los equipos. | Eficacia en la resolución de problemas y mantenimiento de equipos. | Participación activa en la gestión diaria de los recursos tecnológicos. |
-| **Estudiantes** | Usuarios finales que utilizan las computadoras para sus actividades académicas. | Usuario final | Utilizar los recursos tecnológicos para tareas académicas. | Eficiencia y efectividad en el uso de los recursos tecnológicos. | Uso regular de los equipos en sus actividades académicas. |
+| **Representante**          | **Descripción**                                                                 | **Tipo**          | **Responsabilidades**                                                   | **Criterios de éxito**                                              | **Implicación**                                      |
+|----------------------------|---------------------------------------------------------------------------------|-------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------|-----------------------------------------------------|
+| **Bienestar Universitario** | Grupo responsable de gestionar las inscripciones y asegurar que los estudiantes reciban toda la información necesaria sobre el evento. | Administrador     | Gestionar inscripciones, coordinar la difusión de información sobre el evento. | Completar la inscripción de estudiantes y mantenerlos informados. | Asegurar el correcto flujo de información y participación. |
+| **Estudiantes Participantes** | Usuarios finales que participarán activamente en el evento.                                | Usuario final     | Registrarse en el evento, acceder a detalles en la plataforma y recibir notificaciones. | Participar activamente en el evento y aprovechar las herramientas disponibles. | Participación constante y uso de los recursos proporcionados. |
 
 ### 3.6 Necesidades de los interesados y usuarios
 
-| **Nro.** | **Requerimiento Funcional** | **Descripción** | **Prioridad** | **Inquietudes** | **Solución Propuesta** |
-| --- | --- | --- | --- | --- | --- |
-| 1 | Autenticación segura | Los interesados y usuarios necesitan un sistema de autenticación que asegure que solo el personal autorizado pueda acceder a los datos y funciones del sistema. | Alta | Seguridad de los datos | Implementar un sistema de autenticación con contraseñas seguras y, de ser posible, autenticación de dos factores. |
-| 2 | Generación de informes personalizados | Los administradores requieren la capacidad de generar informes detallados sobre el estado del hardware y el uso de la red. | Media | La personalización puede hacer que el sistema sea más complejo de usar | Proveer plantillas de informes que puedan ser personalizadas fácilmente por los usuarios. |
-| 3 | Optimización del soporte técnico | Los interesados necesitan una forma de mejorar la eficiencia en el soporte técnico mediante datos precisos sobre el uso de los recursos. | Media | La cantidad de datos podría ser abrumadora | Filtrar y mostrar los datos más relevantes para el soporte técnico. |
-| 4 | Interfaz intuitiva | Los usuarios finales prefieren una interfaz sencilla e intuitiva para interactuar con el sistema. | Media | Algunos usuarios podrían necesitar formación adicional | Realizar pruebas de usabilidad y ofrecer una guía de uso dentro del sistema. |
-| 5 | Almacenamiento de datos | Los datos recolectados sobre el uso de hardware y la red deben almacenarse en una base de datos para análisis futuro. | Alta | Seguridad y consistencia de los datos en la base de datos | Implementar una base de datos robusta (ej. MySQL, PostgreSQL) con procedimientos de respaldo y restauración. |
-| 6 | Exportación de datos para Tableau | Los administradores deben poder exportar los datos en formatos compatibles con herramientas de análisis como Tableau (ej. CSV, Excel, etc.). | Alta | Formatos incompatibles o pérdida de datos en la exportación | Proporcionar una opción para exportar los datos a formatos estándar como CSV, que puedan ser fácilmente integrados con Tableau. |
-
+| **Nro.** | **Requerimiento Funcional**           | **Descripción**                                                                 | **Prioridad** | **Inquietudes**                                                  | **Solución Propuesta**                                         |
+|----------|---------------------------------------|---------------------------------------------------------------------------------|---------------|------------------------------------------------------------------|---------------------------------------------------------------|
+| 1        | Disponibilidad de servidores          | Garantizar que los servidores estén operativos durante el evento.               | Alta          | Fallas en los servidores que interrumpan las actividades.        | Implementar servidores redundantes y realizar pruebas de carga. |
+| 2        | Conexión estable a internet           | Asegurar una red estable y rápida para el acceso a la plataforma.               | Alta          | Caídas o lentitud en la conexión que afecten el rendimiento.     | Contratar proveedores confiables y configurar balanceo de carga. |
+| 3        | Escalabilidad del sistema             | Permitir que la infraestructura soporte un número elevado de usuarios.          | Alta          | Que el sistema colapse por exceso de participantes simultáneos.  | Utilizar servicios en la nube con capacidad de escalado automático. |
+| 4        | Monitoreo en tiempo real              | Supervisar el estado de los servidores y la red durante el evento.              | Media         | Dificultad para detectar y solucionar problemas rápidamente.     | Implementar herramientas de monitoreo como Zabbix o Grafana.   |
+| 5        | Seguridad de la información           | Proteger los datos de los usuarios contra accesos no autorizados.               | Alta          | Vulnerabilidades que expongan información sensible.              | Configurar firewalls, cifrado de datos y auditorías de seguridad. |
+| 6        | Respaldo y recuperación de datos      | Realizar copias de seguridad frecuentes de la información almacenada.           | Media         | Pérdida de datos por fallos en el sistema.                       | Implementar backups automáticos y plan de recuperación ante desastres. |
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
@@ -204,24 +223,31 @@ e) Estandaraes de calidad y seguridad	](#_toc394513800)42
 
 ### 4.1 Perspectiva del producto <span id="perspectiva-producto" class="anchor"></span>
 
-    El sistema de monitoreo proporcionará una solución integral para el seguimiento y evaluación del rendimiento de las computadoras de los laboratorios, facilitando la gestión proactiva de la infraestructura tecnológica.
+    El sistema de infraestructura tecnológica para el evento "Juegos Florales de la Universidad Privada de Tacna" ofrecerá una solución integral para la gestión, monitoreo y soporte de los recursos tecnológicos, como computadoras, proyectores, redes y sistemas de audio. Garantizará el correcto funcionamiento de los equipos antes y durante el evento, asegurando una experiencia fluida para organizadores y asistentes, y contribuyendo al éxito del evento mediante una infraestructura confiable y eficiente.
 
 ### 4.2 Resumen de capacidades <span id="resumen-capacidades" class="anchor"></span>
 
-| **Beneficios para el Área de TI y Soporte Técnico** | **Principales características** |
-|----------------------------------------------------|---------------------------------|
-| **Monitoreo en tiempo real** | Permite el seguimiento continuo del rendimiento de CPU, RAM, GPU y red, así como la identificación de posibles cuellos de botella en el uso de recursos. |
-| **Alertas automáticas** | Genera notificaciones en tiempo real ante cualquier anomalía detectada, facilitando una respuesta rápida y efectiva. |
-| **Reportes detallados** | Genera informes automatizados y personalizables sobre el uso de los recursos, el rendimiento de las computadoras y el consumo de ancho de banda, lo que permite una toma de decisiones informada. |
-| **Análisis comparativo** | Posibilidad de comparar el rendimiento entre distintos laboratorios para identificar cuáles hacen un mayor uso del ancho de banda o presentan más problemas técnicos. |
+| **Beneficios para el bienestar universitario** | **Principales características** |
+|-------------------------------------------------|---------------------------------|
+| Mejora la experiencia de los asistentes y organizadores durante el evento. | Gestión centralizada de equipos y recursos tecnológicos. |
+| Asegura la disponibilidad y correcto funcionamiento de los dispositivos tecnológicos en todo momento. | Monitoreo en tiempo real de equipos y sistemas tecnológicos. |
+| Contribuye al éxito del evento, garantizando una experiencia tecnológica fluida. | Integración con plataformas de gestión del evento. |
+| Facilita la resolución rápida de problemas tecnológicos, minimizando posibles fallos. | Soporte y mantenimiento proactivo de la infraestructura. |
+| Optimiza el uso de los recursos tecnológicos disponibles durante el evento. | Planificación y coordinación de la infraestructura tecnológica previa al evento. |
 
 ### 4.3 Suposiciones y dependencias <span id="suposiciones-dependencias" class="anchor"></span>
 
-    Acceso a la infraestructura: Se asume que el Área de TI proporcionará el acceso necesario a las computadoras y la red para la implementación del sistema de monitoreo.
-    
-    Estabilidad del sistema: Se asume que el script de monitoreo será lo suficientemente ligero para no afectar el rendimiento normal de las computadoras.
-    
-    Disponibilidad de recursos: Se presupone que los recursos técnicos y humanos necesarios para el desarrollo e implementación del sistema estarán disponibles según lo planificado.
+    #### Suposiciones:
+
+    - Se asume que los equipos tecnológicos proporcionados para el evento estarán en condiciones óptimas antes del inicio del evento.
+    - Se supone que los organizadores del evento tendrán acceso a las plataformas de gestión y podrán integrarlas correctamente con la infraestructura tecnológica.
+    - Se considera que se dispondrá de personal capacitado para gestionar y operar la infraestructura tecnológica durante el evento.
+
+    #### Dependencias:
+
+    - Dependencia de una conexión a internet estable para la operación de sistemas de monitoreo en tiempo real.
+    - Dependencia de proveedores de equipos tecnológicos y servicios de soporte en caso de fallos o problemas durante el evento.
+    - La integración exitosa con las plataformas de gestión del evento depende de la compatibilidad de los sistemas utilizados.
 
 ### 4.4 Costos y precios <span id="costos-precios" class="anchor"></span>
 
@@ -235,107 +261,124 @@ e) Estandaraes de calidad y seguridad	](#_toc394513800)42
 
 ### 4.5 Licenciamiento e instalación <span id="licenciamiento-instalacion" class="anchor"></span>
 
-    Licenciamiento: La herramienta se distribuirá bajo una licencia de software libre para su uso interno en la universidad.
-    
-    Instalación: La instalación del sistema se llevará a cabo en los laboratorios de informática, con soporte técnico a cargo del Área de TI, asegurando una implementación sin contratiempos.
+    **Licenciamiento**: El sistema de infraestructura tecnológica para el evento "Juegos Florales de la Universidad Privada de Tacna" será distribuido bajo una licencia propietaria para su uso exclusivo durante el evento, con acceso restringido a los recursos tecnológicos necesarios.
+
+    **Instalación**: La instalación del sistema se llevará a cabo en los espacios asignados para el evento, incluidos los equipos tecnológicos y sistemas de monitoreo. El Área de TI de la universidad se encargará de la instalación y configuración, garantizando que todos los dispositivos, redes y sistemas de audio estén listos antes del evento, con soporte técnico disponible durante toda su duración.
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 ## 5. Características del producto <span id="caracteristicas-producto" class="anchor"></span>
 
-    Monitoreo en tiempo real: Seguimiento continuo del rendimiento de CPU, RAM, GPU, temperatura y consumo de red en las computadoras de los laboratorios.
-    
-    Evaluación del consumo de energía: Identificación de patrones de consumo energético para optimizar el rendimiento y prevenir sobrecalentamientos.
-    
-    Análisis de la red: Supervisión del uso de internet y ancho de banda, con la capacidad de identificar cuellos de botella y optimizar la conectividad.
-    
-    Generación de reportes automatizados: Creación de informes personalizados sobre el estado y uso de los recursos, facilitando la toma de decisiones informadas.
-    
-    Alertas automáticas: Notificaciones instantáneas en caso de detectar anomalías en el rendimiento, permitiendo una rápida intervención.
+    Gestión centralizada de infraestructura: Control y monitoreo en tiempo real de los recursos tecnológicos implementados, asegurando la óptima funcionalidad de redes, sistemas audiovisuales, y estaciones de trabajo.
+
+    Compatibilidad multiplataforma: Las soluciones desarrolladas incluyen aplicaciones web y móviles accesibles desde distintos dispositivos, facilitando la interacción y organización del evento.
+
+    Escalabilidad y flexibilidad: Infraestructura diseñada para adaptarse al número de participantes y las demandas tecnológicas del evento sin comprometer el rendimiento.
+
+    Automatización de procesos clave: Implementación de herramientas para la gestión automatizada de cronogramas, inscripción en actividades y generación de reportes.
+
+    Soporte en tiempo real: Sistema integrado para el manejo y resolución ágil de problemas tecnológicos durante el evento, reduciendo tiempos de inactividad.
+
+    Seguridad robusta: Protección de datos sensibles a través de protocolos avanzados de seguridad en toda la infraestructura tecnológica utilizada.
 
 ## 6. Restricciones <span id="restricciones" class="anchor"></span>
 
-    Acceso limitado a la infraestructura: El proyecto dependerá del acceso proporcionado por el Área de TI, lo que podría limitar la implementación y el monitoreo completo de los equipos.
-    
-    Recursos computacionales: El script de monitoreo debe ser lo suficientemente ligero para no afectar negativamente el rendimiento de las computadoras durante su operación.
-    
-    Compatibilidad de software: La herramienta debe ser compatible con el entorno operativo actual de la universidad, lo que podría restringir las tecnologías y plataformas que pueden ser utilizadas.
+    Limitación de recursos económicos: El presupuesto asignado para la implementación de la infraestructura tecnológica es fijo, lo que restringe la adquisición de equipos y servicios de alta gama.
+
+    Dependencia de conectividad: La funcionalidad del sistema depende de una conexión estable a internet, lo que podría verse afectado por factores externos como cortes de servicio.
+
+    Tiempo de implementación: El cronograma del evento restringe el tiempo disponible para la planificación, instalación y prueba de la infraestructura tecnológica.
+
+    Restricciones de espacio físico: La ubicación de los equipos y dispositivos debe adaptarse a los espacios asignados en las instalaciones de la universidad.
+
+    Cumplimiento normativo: Es necesario garantizar que toda la infraestructura y los servicios utilizados cumplan con las normativas legales y políticas internas de la universidad.
+
+    Capacitación del personal: La operación eficiente del sistema requiere que el equipo responsable reciba capacitación adecuada en un tiempo limitado.
 
 ## 7. Rangos de calidad <span id="rangos-calidad" class="anchor"></span>
 
-    Exactitud de los datos: Se requiere un nivel alto de precisión en la recopilación y procesamiento de datos para asegurar su utilidad y fiabilidad en la toma de decisiones.
-    
-    Disponibilidad del sistema: El sistema debe estar operativo al menos un 95% del tiempo para garantizar un monitoreo continuo y confiable.
-    
-    Usabilidad: La interfaz del sistema debe ser intuitiva y fácil de usar para los técnicos y el personal del Área de TI.
-    
-    Escalabilidad: El sistema debe ser escalable para soportar el crecimiento de la infraestructura tecnológica de la universidad, permitiendo la incorporación de nuevos laboratorios y equipos sin comprometer el rendimiento.
+    Disponibilidad: La infraestructura tecnológica garantizará un tiempo de actividad mínimo del 99.5% durante el evento, reduciendo al máximo interrupciones que puedan afectar las actividades programadas.
+
+    Rendimiento: Los sistemas implementados deben ser capaces de soportar al menos 200 usuarios concurrentes en tiempo real, asegurando tiempos de respuesta inferiores a 2 segundos en las aplicaciones.
+
+    Escalabilidad: El diseño de la infraestructura permitirá la adición de nuevos recursos tecnológicos con un impacto mínimo en el rendimiento general.
+
+    Fiabilidad: Todos los equipos y sistemas estarán configurados para minimizar errores y fallos, con un margen de tolerancia al error menor al 1% durante el evento.
+
+    Seguridad: Se garantizará la protección de los datos personales de los usuarios mediante el uso de protocolos encriptados (como HTTPS) y autenticación segura.
+
+    Usabilidad: Las aplicaciones y dispositivos serán intuitivos, asegurando que los usuarios puedan interactuar sin requerir capacitación técnica avanzada.
 
 ## 8. Precedencia y Prioridad
-    El desarrollo del sistema de monitoreo y evaluación de red y hardware debe priorizar los componentes más críticos para su correcta implementación y operación. El enfoque principal será asegurar que las funcionalidades esenciales estén disponibles en la primera fase de desarrollo, y posteriormente se añadirán características adicionales.
 
-| **Roles**         | **Nro.** | **Requerimiento Funcional**          | **Descripción**                                                                                                      |
-|-------------------|----------|--------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| **Administrador**  | 1        | Autenticación segura                 | Implementar un sistema de autenticación para proteger el acceso al sistema y los datos.                               |
-| **Administrador**  | 2        | Almacenamiento de datos              | Almacenar los datos recolectados sobre el rendimiento de hardware y red en una base de datos segura.                  |
-| **Administrador**  | 3        | Generación de informes personalizados| Permitir a los administradores crear informes detallados sobre el rendimiento y uso de los recursos.                  |
-| **Soporte Técnico**| 4        | Optimización del soporte técnico     | Usar los datos recolectados para mejorar la eficiencia del soporte técnico mediante diagnósticos rápidos.             |
-| **Administrador**  | 5        | Exportación de datos para Tableau    | Exportar los datos almacenados en formatos compatibles con herramientas de análisis como Tableau.                     |
+    La tabla a continuación identifica los roles clave involucrados en el proyecto "Infraestructura Tecnológica para el Evento Juegos Florales de la Universidad Privada de Tacna" junto con los requerimientos funcionales específicos asociados. Cada rol tiene responsabilidades particulares para asegurar el correcto funcionamiento y la satisfacción de las necesidades del evento.
+
+| **Roles**         | **Nro.** | **Requerimiento Funcional**          | **Descripción**                                     |
+|--------------------|----------|---------------------------------------|-----------------------------------------------------|
+| **Administrador**  | 1        | Gestión de usuarios                  | Permitir registrar, modificar y eliminar usuarios del sistema. |
+| **Organizador**    | 2        | Creación de eventos                  | Facilitar la programación y personalización de los eventos del día festivo. |
+| **Participante**   | 3        | Registro de participación            | Ofrecer un formulario para inscribirse en las actividades del evento. |
+| **Soporte técnico**| 4        | Monitoreo en tiempo real             | Proveer herramientas para supervisar el estado de la infraestructura tecnológica. |
+| **Visitante**      | 5        | Consulta de actividades              | Permitir a los asistentes ver el cronograma y detalles de los eventos. |                |
 
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 ## 9. Otros requerimientos del producto
-### a) Estándares legales
-    El sistema debe cumplir con normativas de protección de datos, como la Ley N° 29733 de Perú y el GDPR en caso de datos internacionales, garantizando la privacidad de la información recolectada.
 
-### b) Estándares de comunicación
-    Se deben utilizar protocolos seguros (HTTPS, TLS) para proteger la transmisión de datos entre los clientes y el servidor, asegurando la privacidad y seguridad de la información.
+    1. **Requerimientos de Seguridad:**
+    - Implementación de medidas para garantizar la protección de los datos de los usuarios.
+    - Acceso controlado mediante roles y permisos para evitar alteraciones no autorizadas.
+    - Certificación SSL para asegurar las comunicaciones.
 
-### c) Estándares de cumplimiento de la plataforma
-    El sistema debe ser compatible con los sistemas operativos y hardware existentes en la universidad, asegurando su correcto funcionamiento sin afectar el rendimiento de las computadoras.
+    2. **Requerimientos de Mantenimiento:**
+    - Documentación detallada del sistema para facilitar actualizaciones futuras.
+    - Contrato de soporte técnico para la resolución de problemas y mantenimiento preventivo.
+    - Herramientas para el monitoreo y la detección de fallos en tiempo real.
 
-### d) Estándares de calidad y seguridad
-    El sistema debe garantizar la seguridad (control de acceso, encriptación) y la calidad de los datos recolectados, asegurando su precisión, integridad y disponibilidad para análisis y toma de decisiones.
+    3. **Requerimientos de Compatibilidad:**
+    - Soporte para múltiples dispositivos y navegadores modernos.
+    - Integración con las plataformas existentes de la universidad.
+    - Uso de tecnologías estándar para garantizar la interoperabilidad.
 
+    4. **Requerimientos de Escalabilidad:**
+    - Diseño modular para permitir la expansión del sistema según las necesidades futuras.
+    - Infraestructura en la nube que soporte un aumento en la demanda durante los eventos.
+
+    5. **Requerimientos de Desempeño:**
+    - Tiempo de respuesta inferior a 2 segundos para la mayoría de las operaciones.
+    - Capacidad para manejar al menos 500 usuarios simultáneamente sin degradación del rendimiento.
+
+    6. **Requerimientos Legales y Normativos:**
+    - Cumplimiento con las leyes de protección de datos personales aplicables.
+    - Alineación con las normativas de accesibilidad para garantizar inclusión.
 
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 ## CONCLUSIONES
-1. **Mejora en la Eficiencia**: La herramienta permitirá una gestión más eficiente de los recursos tecnológicos en los laboratorios, facilitando la identificación y solución de problemas de rendimiento.
 
-2. **Proactividad en el Soporte Técnico**: Al monitorear continuamente el estado de las computadoras, se podrá anticipar y resolver fallos antes de que afecten a los usuarios, mejorando la experiencia de estudiantes y docentes.
+    El proyecto de infraestructura tecnológica para el evento "Juegos Florales de la Universidad Privada de Tacna" presenta una solución integral que optimiza la gestión y monitoreo de los recursos tecnológicos utilizados durante el evento. La implementación de un sistema robusto garantizará la disponibilidad continua de los equipos tecnológicos esenciales, mejorando la experiencia tanto para los organizadores como para los asistentes.
 
-3. **Optimización del Consumo Energético**: El sistema ayudará a reducir el consumo de energía al identificar equipos subutilizados o en mal estado, promoviendo prácticas más sostenibles en el uso de recursos.
+    Las herramientas y tecnologías seleccionadas han sido elegidas con el fin de asegurar una infraestructura escalable y confiable, capaz de adaptarse a las necesidades del evento. Asimismo, el enfoque en la integración de sistemas y la supervisión en tiempo real permitirá resolver problemas de manera eficiente, asegurando el éxito del evento desde el punto de vista tecnológico.
 
-4. **Facilidad de Uso**: La interfaz diseñada para la herramienta será accesible y fácil de usar, permitiendo al personal técnico y administrativo acceder a datos y generar informes sin complicaciones.
+    En cuanto a los aspectos de seguridad y rendimiento, se ha considerado un diseño que optimiza tanto la protección de los datos como la capacidad de respuesta del sistema, garantizando una experiencia fluida y segura para todos los usuarios.
 
-5. **Sostenibilidad del Proyecto**: La implementación del sistema asegurará que la gestión de recursos tecnológicos se mantenga actualizada y eficiente a largo plazo.
+    Este enfoque no solo facilita la organización del evento, sino que también establece una base sólida para futuros eventos similares, asegurando la adaptabilidad y sostenibilidad de la infraestructura tecnológica.
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 ## RECOMENDACIONES <span id="recomendaciones" class="anchor"></span>
 
-    -Capacitación continua del personal técnico: Asegúrate de que el equipo de soporte técnico reciba formación continua en el uso y mantenimiento del nuevo sistema. Esto ayudará a maximizar el rendimiento del sistema y a minimizar los tiempos de inactividad.
-    
-    -Realizar pruebas piloto antes del despliegue completo: Es recomendable llevar a cabo un despliegue piloto en uno o dos laboratorios antes de implementar el sistema en toda la universidad. Esto permitirá identificar y resolver cualquier problema antes de la implementación a gran escala.
-    
-    -Monitoreo constante durante la fase inicial: Durante los primeros meses de operación, se debe realizar un monitoreo continuo del sistema para identificar posibles problemas de rendimiento o compatibilidad. Esto permitirá realizar ajustes y optimizaciones rápidamente.
-    
-    -Crear un plan de contingencia: Desarrolla un plan de contingencia para manejar cualquier problema crítico que pueda surgir durante la implementación o operación del sistema. Esto incluiría procedimientos para la recuperación del sistema y la continuidad de las operaciones.
-    
-    -Recoger feedback de los usuarios: Es importante recoger el feedback de los usuarios, especialmente del personal de soporte técnico y los estudiantes, para entender cómo el sistema puede mejorar y adaptarse a sus necesidades. Esto puede ayudar a guiar futuras actualizaciones y mejoras.
-    
-    -Actualizar la infraestructura según sea necesario: Si se detecta que la infraestructura actual no es suficiente para soportar el sistema de manera óptima, se deben planificar y ejecutar actualizaciones de hardware o software para garantizar un rendimiento eficiente.
-    
-    -Documentación exhaustiva: Asegúrate de que toda la documentación, tanto para los usuarios como para los técnicos, esté completa y actualizada. Esto facilitará la resolución de problemas y la formación de nuevos usuarios.
-    
-    -Evaluar la seguridad periódicamente: Realiza evaluaciones de seguridad periódicas para asegurarte de que los datos y el acceso al sistema están protegidos adecuadamente, y que se cumplen las políticas de seguridad de la universidad.
-    
-    -Planificar futuras expansiones: Considera desde el principio la posibilidad de futuras expansiones del sistema, ya sea añadiendo más laboratorios, funciones adicionales, o integraciones con otros sistemas. Esto permitirá que el sistema crezca y evolucione junto con las necesidades de la universidad.
-    
-    -Involucrar a los interesados en el proceso: Mantén una comunicación constante con todos los interesados del proyecto, asegurándote de que estén informados sobre el progreso y cualquier cambio significativo. Su participación activa puede facilitar la adopción del sistema y contribuir al éxito general del proyecto.
+    1. **Monitoreo continuo**: Se recomienda implementar herramientas de monitoreo en tiempo real que permitan detectar cualquier fallo en los sistemas tecnológicos antes de que afecte el desarrollo del evento. Esto asegurará que los equipos y redes funcionen sin interrupciones.
+
+    2. **Capacitación al personal**: Es fundamental proporcionar formación al personal encargado del soporte técnico durante el evento. Esto les permitirá resolver problemas rápidamente y gestionar eficazmente los recursos tecnológicos disponibles.
+
+    3. **Plan de contingencia**: Se sugiere desarrollar un plan de contingencia detallado que contemple situaciones imprevistas, como fallos en equipos, caídas de red o problemas con la infraestructura. Esto garantizará una respuesta ágil y eficiente ante cualquier incidente.
+
+    4. **Escalabilidad**: Para futuros eventos de mayor envergadura, se recomienda diseñar la infraestructura tecnológica de manera escalable. Esto permitirá ampliar los recursos sin necesidad de una reestructuración significativa del sistema.
+
+    5. **Revisión post-evento**: Tras la finalización del evento, es esencial realizar una revisión exhaustiva de la infraestructura tecnológica. Esto proporcionará información valiosa para mejorar la planificación y ejecución en eventos futuros.
 
 <span id="_Toc52661357" class="anchor"></span>**BIBLIOGRAFIA**
 

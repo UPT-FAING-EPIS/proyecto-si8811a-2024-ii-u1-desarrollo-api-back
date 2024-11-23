@@ -8,7 +8,7 @@
 
 **Escuela Profesional de Ingeniería de Sistemas**
 
-**Proyecto *"Juegos Florales - Tópicos de Base de Datos Avanzados(revisar titulo)"***
+**Proyecto *"Infraestructura Tecnológica para el Evento Juegos Florales de la Universidad Privada de Tacna"***
 
 Curso: Tópicos de Base de Datos Avanzados
 
@@ -30,7 +30,7 @@ Huallpa Maron, Jesus Antonio (2021071085)
 </center>
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-**Sistema *"Juegos Florales - Tópicos de Base de Datos Avanzados(revisar titulo)"***
+**Sistema *"Infraestructura Tecnológica para el Evento Juegos Florales de la Universidad Privada de Tacna"***
 
 Informe de Factibilidad
 
@@ -78,7 +78,7 @@ Versión *{1.0}*
 
 1.1. Nombre del proyecto
    
-    "Juegos Florales - Tópicos de Base de Datos Avanzados(revisar titulo)"
+    "Infraestructura Tecnológica para el Evento Juegos Florales de la Universidad Privada de Tacna"
     
 1.2. Duración del proyecto
 
@@ -86,7 +86,7 @@ Versión *{1.0}*
 
 1.3. Descripción
 
-    -El proyecto "Juegos Florales - Tópicos de Base de Datos Avanzados(revisar titulo)" se centra en el desarrollo de una serie de aplicaciones web y móviles diseñadas para apoyar las actividades del día festivo de los Juegos Florales en la Universidad Privada de Tacna. Estas aplicaciones tienen como objetivo facilitar la organización, gestión y participación en los eventos del día, brindando una experiencia interactiva y moderna para los usuarios.
+    -El proyecto "Infraestructura Tecnológica para el Evento Juegos Florales de la Universidad Privada de Tacna" se centra en el desarrollo de una serie de aplicaciones web y móviles diseñadas para apoyar las actividades del día festivo de los Juegos Florales en la Universidad Privada de Tacna. Estas aplicaciones tienen como objetivo facilitar la organización, gestión y participación en los eventos del día, brindando una experiencia interactiva y moderna para los usuarios.
 
     -En este informe, se detallan los costos asociados a los servicios utilizados para la infraestructura del proyecto, tales como AWS, MongoDB, entre otros. Además, se analizan los gastos adicionales vinculados al despliegue y mantenimiento de la infraestructura, asegurando una solución escalable y eficiente para el evento.
 
@@ -94,11 +94,10 @@ Versión *{1.0}*
 
 1.4.1 Objetivo general
    
-    -Implementar una infraestructura tecnológica eficiente para soportar las aplicaciones web y móviles del proyecto "Juegos Florales", optimizando la gestión y experiencia del evento en la Universidad Privada de Tacna.
+    -Implementar una infraestructura tecnológica eficiente para soportar las aplicaciones web y móviles del proyecto "Infraestructura Tecnológica para el Evento Juegos Florales de la Universidad Privada de Tacna", optimizando la gestión y experiencia del evento en la Universidad Privada de Tacna.
 
 1.4.2 Objetivos Específicos
             
-    -Diseñar e implementar aplicaciones web y móviles utilizando React y Flutter para facilitar la interacción y participación en el evento.
     -Configurar y gestionar servicios en AWS para garantizar una infraestructura escalable y confiable.
     -Utilizar MongoDB como base de datos para almacenar y administrar la información del evento de manera eficiente.
     -Integrar Docker para estandarizar el entorno de desarrollo y despliegue.
@@ -131,7 +130,7 @@ Versión *{1.0}*
 
     3.2. Consideraciones de hardware y software
 
-        Para el proyecto "Juegos Florales - Tópicos de Base de Datos Avanzados(revisar titulo)", es fundamental garantizar que la infraestructura tecnológica cuente con los recursos necesarios tanto en hardware como en software para su correcto desarrollo, implementación y operación.
+        Para el proyecto "Infraestructura Tecnológica para el Evento Juegos Florales de la Universidad Privada de Tacna", es fundamental garantizar que la infraestructura tecnológica cuente con los recursos necesarios tanto en hardware como en software para su correcto desarrollo, implementación y operación.
 
       Hardware
 
@@ -139,44 +138,88 @@ Versión *{1.0}*
 
         Instancias EC2:
 
-        Tipo: t2.micro para pruebas y entornos de desarrollo.
-        Tipo: t3.medium o superior para producción, dependiendo de la carga esperada.
-        Almacenamiento: 30 GB de EBS mínimo para cada instancia.
-        S3 Buckets: Espacio suficiente para alojar archivos de aplicaciones web y móviles.
-        MongoDB Atlas: Cluster básico para desarrollo y cluster escalable para producción.
-          
+        Tipo:
+          *t2.micro para pruebas, entornos de desarrollo y ambientes de staging.
+          *t3.medium o superior para producción, ajustando según la carga esperada y los picos de tráfico.
+        Almacenamiento: 
+          *30 GB de EBS mínimo para cada instancia, con capacidad de escalar según necesidades de almacenamiento.
+          *Utilización de EBS con IOPS optimizadas para bases de datos críticas o alto rendimiento en producción, si fuera necesario.
+        S3 Buckets: 
+          *Espacio suficiente para alojar archivos estáticos de las aplicaciones web y móviles, como imágenes, videos, y otros recursos estáticos.
+          *Configuración de políticas de seguridad para restringir el acceso a recursos críticos y evitar accesos no autorizados.
+        MongoDB Atlas: 
+          *Cluster básico con réplica para pruebas y desarrollo.
+          *Cluster escalable para producción, con capacidad de autoescalado horizontal en función de la demanda.
+          *Configuración de backups automáticos y monitoreo de métricas clave como latencia, uso de CPU y almacenamiento.
+        Sistema de Monitoreo:
+          *Integración de herramientas como CloudWatch para supervisar el rendimiento de los servicios en tiempo real.
+          *Grafana para dashboards personalizados y análisis de métricas clave del sistema.
+
         Dispositivos del Usuario Final:
 
-        Móviles: Compatibilidad con Android 8.0/iOS 12 o superior.
-        Escritorio: PCs con navegadores modernos (Chrome, Firefox, Edge) y al menos 4 GB de RAM.
+        Móviles: 
+          *Compatibilidad con Android 8.0/iOS 12 o superior.
+          *Aplicaciones optimizadas para pantallas táctiles de 5 pulgadas o más.
+          *Uso eficiente de recursos para dispositivos de gama media y baja.
+        Escritorio: 
+          *PCs con navegadores modernos (Chrome, Firefox, Edge).
+          *Mínimo 4 GB de RAM y procesadores equivalentes a Intel i3 o superior.
+          *Resolución de pantalla mínima de 1366x768 para una experiencia de usuario óptima.
 
       Software
 
         Herramientas para Desarrollo e Implementación:
 
-        Terraform (versión 1.0 o superior) para la gestión de infraestructura como código.
-        Docker para contenerización de las aplicaciones.
-        Visual Studio Code para la codificación de aplicaciones web (React) y móviles (Flutter).
+        Terraform (versión 1.0 o superior):
+          *Para la gestión de infraestructura como código, incluyendo la configuración de entornos necesarios para el backend de la aplicación móvil.
+        Docker:
+          *Para contenerización del backend y del servidor de APIs que las aplicaciones Flutter consumirán.
+        Visual Studio Code:
+          *Editor principal para el desarrollo de las aplicaciones web (React) y móviles (Flutter).
+          *Complementos recomendados para Flutter:
+            *Dart y Flutter extensions para soporte de sintaxis, autocompletado y depuración.
+        Flutter SDK:
+          *Descarga e instalación del SDK de Flutter (versión 3.0 o superior) para compatibilidad con las últimas herramientas y dispositivos.
+          *Uso de herramientas de línea de comandos como flutter doctor para verificar el entorno de desarrollo.
+        Android Studio y Xcode:
+          *Android Studio: Para emuladores de Android y manejo del SDK de Android.
+          *Xcode: Obligatorio para la compilación y pruebas en dispositivos iOS.
+        AWS CLI:
+          *Gestión de servicios en AWS desde la línea de comandos para facilitar el despliegue de recursos de backend requeridos por las aplicaciones móviles.
 
         Infraestructura en la Nube:
 
-        AWS CLI para gestionar servicios en AWS desde la línea de comandos.
         Proveedores de Terraform:
-        HashiCorp AWS Provider (~> 4.0).
-        MongoDB Atlas Provider (~> 1.0).
 
+          *HashiCorp AWS Provider (~> 4.0) para configurar servicios en AWS.
+          *MongoDB Atlas Provider (~> 1.0) para gestionar bases de datos en MongoDB Atlas.
+        Servicios relacionados con Flutter:
+
+        *Configuración de Amazon S3 o CloudFront para alojar archivos de recursos necesarios para la app.
         Tecnologías para Aplicaciones:
 
-        React para el desarrollo de la aplicación web.
-        Flutter para la aplicación móvil, asegurando compatibilidad multiplataforma.
-        MongoDB como base de datos para el almacenamiento y gestión de datos.
+        React:
+          *Desarrollo de la aplicación web para complementar la experiencia del evento.
+        Flutter:
+
+        *Compatibilidad multiplataforma para Android e iOS.
+        *Diseño centrado en widgets reutilizables para garantizar una interfaz coherente y responsiva.
+        *Integración con paquetes esenciales como:
+          *http o dio para llamadas a APIs REST.
+          *provider o riverpod para manejo del estado.
+          *flutter_secure_storage para almacenar credenciales de forma segura.
+
+        MongoDB:
+
+          *Base de datos utilizada para gestionar la información del evento, como el registro de usuarios, resultados y recursos compartidos.
+          *Integración a través de una API backend que exponga los datos necesarios para la aplicación móvil.
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 4. <span id="_Toc52661349" class="anchor"></span>**Estudio de
     Factibilidad**
 
-        Describir los resultados que esperan alcanzar del estudio de factibilidad, las actividades que se realizaron para preparar la evaluación de factibilidad y por quien fue aprobado.
+        El Estudio de Factibilidad tiene como objetivo evaluar la viabilidad del proyecto "Infraestructura Tecnológica para el Evento Juegos Florales" de la Universidad Privada de Tacna, asegurando que la infraestructura y las aplicaciones propuestas sean capaces de satisfacer las necesidades del evento de manera efectiva, eficiente y sostenible. A través de este estudio, se busca identificar los riesgos potenciales, los recursos necesarios y los costos asociados, con el fin de asegurar una implementación exitosa.
 
     4.1. <span id="_Toc52661350" class="anchor"></span>Factibilidad Técnica
 
@@ -236,7 +279,9 @@ Versión *{1.0}*
 
       4.2.1. Costos Generales
 
-        Los costos generales son todos los gastos realizados en accesorios y material de oficina y de uso diario, necesarios para los procesos, tales como, papeles, plumas, cartuchos de impresora, marcadores, computadora etc. Colocar tabla de costos.
+        Los costos generales son todos los gastos realizados en accesorios y material de oficina y de uso diario, necesarios para los procesos, tales como, papeles, plumas, cartuchos de impresora, marcadores, computadora etc.
+        
+      tabla de costos.
    
    |Material|Cantidad|Costo Unitario (S/)|
    | :-: | :- | :- |
@@ -259,11 +304,18 @@ Versión *{1.0}*
 
       Evaluar si se cuenta con los requerimientos técnicos para la implantación del software como el dominio, infraestructura de red, acceso a internet, etc.
    
-   |Concepto|Costo|
-   | :-: | :- |
-   |Servicio VPS (Nube)|350.00||
-   |Software de Diagramas y Arquitectura del Proyecto|100.00|
-   |Total|450.00|
+        
+| Concepto                                      | Costo (S/) | Descripción                                                                                                                                              |
+|-----------------------------------------------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Servicio VPS (Nube)**                      | 27.65 USD (aprox. S/. 101.23) | Provisión de servidores virtuales privados en la nube, utilizados para el alojamiento de la infraestructura de backend, incluyendo API Gateway y recursos de Docker. Este servicio asegura la disponibilidad, escalabilidad y rendimiento de los recursos necesarios para ejecutar las aplicaciones backend.               |
+| **Servicio Grafana Cloud**                    | 19 USD (aprox. S/. 69.72) | Servicio de monitoreo en la nube a través de Grafana, utilizado para visualizar las métricas y logs en tiempo real de la infraestructura. Grafana ayuda a observar el rendimiento y la salud de los servicios desplegados, como el API Gateway, recursos de Docker y base de datos MongoDB. |
+| **Almacenamiento en S3 (Flutter & React Frontend)** | 1 USD (aprox. S/. 3.67)   | Almacenamiento de los archivos estáticos de las aplicaciones frontend (Flutter y React) en los buckets de Amazon S3. Este servicio proporciona una solución escalable para alojar los archivos como imágenes, scripts y otros recursos necesarios para la ejecución de las aplicaciones en los dispositivos de los usuarios. |
+| **MongoDB Atlas (Cluster y base de datos)**   | 57 USD (aprox. S/. 209.79) | Base de datos NoSQL gestionada en la nube para almacenar y gestionar datos del proyecto. MongoDB Atlas permite manejar configuraciones y usuarios de manera eficiente, con la flexibilidad de escalado automático y respaldos. El costo de 0.08 USD por hora de funcionamiento del clúster se traduce en un costo mensual. |
+| **Total**                                    | **S/. 384.41** |                                                                                                                                                          |
+
+
+
+
 
       4.2.4. Costos de personal
 
@@ -282,122 +334,126 @@ Versión *{1.0}*
 
       4.2.5.  Costos totales del desarrollo del sistema
 
-      {Totalizar costos y realizar resumen de costo final del proyecto y la forma de pago.
    
    |Concepto|Costo Total (S/)|
    | :-: | :- |
    |Costos Generales|3,222.00|
    |Costos Operativos durante el Desarrollo|500.00|
-   |Costos del Ambiente|450.00|
+   |Costos del Ambiente|384.00|
    |Costos del Personal|6,000.00|
    |Total|10,172.00|
 
       4.3. <span id="_Toc52661352" class="anchor"></span>Factibilidad Operativa
 
-         -Optimización de Recursos: La herramienta ayudará a optimizar la utilización de los recursos tecnológicos al proporcionar datos detallados sobre el uso del hardware y la red. Esta información permitirá a la universidad tomar decisiones informadas sobre el mantenimiento, la actualización o la redistribución de equipos y recursos.
-         -Mejora en la Toma de Decisiones: Al disponer de información precisa y actualizada sobre el desempeño de la infraestructura tecnológica, los administradores podrán tomar decisiones basadas en datos para mejorar la eficiencia operativa y la calidad del servicio ofrecido a los estudiantes y personal académico.
-         -Facilidad de Uso e Integración: La herramienta está diseñada para ser fácil de usar e integrarse con los sistemas existentes, lo que reduce la curva de aprendizaje para el personal y minimiza el impacto en las operaciones diarias.
+        Optimización de Recursos: La herramienta proporcionará datos detallados sobre el uso de la infraestructura tecnológica (red, servidores, equipos), permitiendo una distribución eficiente de los recursos disponibles. Esto facilitará decisiones informadas sobre el mantenimiento, actualización o redistribución de la infraestructura tecnológica.
+
+        Mejora en la Toma de Decisiones: Con información precisa y actualizada sobre el desempeño de los componentes tecnológicos (servidores, redes, equipos), los administradores podrán tomar decisiones estratégicas que mejoren la eficiencia operativa de la infraestructura, asegurando que se mantenga a la vanguardia y funcione de manera óptima.
+
+        Facilidad de Uso e Integración: La herramienta está diseñada para integrarse de manera sencilla con la infraestructura tecnológica existente, lo que facilitará su adopción sin grandes complicaciones ni impacto en las operaciones diarias. Esto optimiza el tiempo y recursos invertidos en la capacitación del personal encargado de su uso.
    
     4.4. <span id="_Toc52661353" class="anchor"></span>Factibilidad Legal
 
-         -Protección de Datos Personales: La recopilación y análisis de datos debe cumplir con las leyes de protección de datos personales en Perú, como la Ley de Protección de Datos Personales (Ley N° 29733). La herramienta debe garantizar que cualquier dato personal recogido sea anonimizado y utilizado exclusivamente con fines académicos y de mejora del desempeño de los equipos.
-         -Licenciamiento de Software: El uso de la biblioteca Python psutil y cualquier otro software o herramienta debe estar conforme a sus respectivas licencias de uso. Se debe asegurar que no haya violación de derechos de propiedad intelectual en el desarrollo y aplicación de la herramienta.
+        Protección de Datos Personales: La recopilación de datos sobre el rendimiento de la infraestructura tecnológica debe cumplir con las normativas de protección de datos personales en Perú, como la Ley N° 29733. Es fundamental que los datos recogidos no contengan información sensible o personal, y que sean utilizados exclusivamente para fines de análisis y mejora de la infraestructura tecnológica.
+
+        Licenciamiento de Software: Las herramientas y bibliotecas utilizadas para el monitoreo de la infraestructura tecnológica, como Python psutil, deben cumplir con las licencias de uso correspondientes. Es vital asegurar que el software no infrinja derechos de propiedad intelectual y que se utilice dentro de los límites legales establecidos.
 
     4.5. <span id="_Toc52661354" class="anchor"></span>Factibilidad Social 
 
-         -Aceptación del Proyecto: La herramienta de monitoreo proporcionará beneficios claros para la comunidad universitaria al mejorar el rendimiento de las computadoras en los laboratorios, optimizando los recursos y asegurando que los equipos estén disponibles y operativos para los estudiantes y profesores. La aceptación del proyecto entre los usuarios será positiva si se comunica adecuadamente el propósito y los beneficios del proyecto.
-         -Impacto en los Usuarios: Los estudiantes y docentes se beneficiarán de un entorno de aprendizaje más eficiente, con equipos que funcionan de manera óptima. Además, el personal de TI podrá responder proactivamente a problemas antes de que se conviertan en fallas significativas, lo que reducirá los tiempos de inactividad y mejorará la satisfacción del usuario.
-         -Capacitación y Adaptación: Para asegurar la adopción efectiva del proyecto, se deben realizar capacitaciones para el personal de TI y otros usuarios relevantes sobre el uso de la herramienta y la interpretación de los datos generados. Esto ayudará a minimizar cualquier resistencia al cambio y facilitará una transición fluida.
+        Aceptación del Proyecto: La comunidad universitaria (estudiantes, docentes y personal administrativo) se beneficiará de una infraestructura tecnológica más robusta y eficiente, lo que contribuirá a mejorar el rendimiento académico y operativo. La aceptación del proyecto será favorable si se comunica correctamente cómo la optimización de los recursos tecnológicos impactará positivamente en el ambiente de trabajo.
+
+        Impacto en los Usuarios: Mejorar la infraestructura tecnológica permitirá a los estudiantes y docentes disfrutar de equipos y sistemas más rápidos y estables, lo que contribuirá a una mejor experiencia de enseñanza y aprendizaje. Además, el personal técnico podrá anticipar problemas y optimizar el mantenimiento preventivo, reduciendo tiempos de inactividad.
+
+        Capacitación y Adaptación: Para garantizar el éxito de la implementación de nuevas herramientas o actualizaciones en la infraestructura tecnológica, se llevará a cabo un programa de capacitación para el personal de TI. Esto asegurará que el equipo pueda administrar y operar eficazmente las mejoras sin interrumpir las actividades cotidianas.
 
 
     4.6. <span id="_Toc52661355" class="anchor"></span>Factibilidad Ambiental
 
-         -Uso de Recursos: La herramienta hace uso de software basado en Python y otras herramientas digitales, lo que no requiere recursos físicos adicionales significativos que impacten negativamente en el medio ambiente. Además, la implementación se realiza en la infraestructura existente de la universidad, minimizando la necesidad de recursos adicionales.
-         -Eficiencia Energética: La herramienta está diseñada para identificar patrones de uso y consumo de recursos como energía y datos, permitiendo así una optimización del consumo de energía de las computadoras. Al monitorizar el rendimiento y la eficiencia de los equipos, se pueden identificar oportunidades para reducir el consumo energético, lo que contribuye a los objetivos de sostenibilidad de la universidad.   
+      Uso de Recursos: El uso de software basado en Python y herramientas digitales no representa una carga significativa sobre los recursos físicos. Además, el proyecto se implementará utilizando la infraestructura existente de la universidad, minimizando la necesidad de nuevas adquisiciones que impacten negativamente en el medio ambiente.
+
+      Eficiencia Energética: El monitoreo continuo de la infraestructura tecnológica permitirá identificar áreas de mejora en el consumo de energía. Optimizar el uso de servidores, equipos y redes reducirá el consumo energético y contribuirá a los objetivos de sostenibilidad de la universidad, alineándose con las mejores prácticas medioambientales.
+
+
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 # 5. Análisis Financiero
 
-El plan financiero se ocupa del análisis de ingresos y gastos asociados a cada proyecto, desde el punto de vista del instante temporal en que se producen. Su misión fundamental es detectar situaciones financieramente inadecuadas. Se tiene que estimar financieramente el resultado del proyecto.
+El análisis financiero del proyecto tiene como objetivo evaluar los ingresos y egresos relacionados con la mejora de la infraestructura tecnológica de la universidad, con el fin de determinar la viabilidad económica de la inversión.
 
 ## 5.1. Justificación de la Inversión
-La inversión en este proyecto se justifica con base en los siguientes beneficios
+La inversión se justifica por los beneficios que aportará en la optimización de la infraestructura tecnológica, que se traducirá en:
 
 **Beneficios tangibles**:
 
--Reducción de costos operativos
--Mejora en la eficiencia del área bajo estudio
--Optimización del uso de recursos
+-Reducción de costos operativos.
+
+-Mejora en la eficiencia de la infraestructura tecnológica.
+
+-Optimización del uso de recursos tecnológicos (servidores, redes, equipos).
 
 **Beneficios intangibles**:
 
--Toma de decisiones más informada
+-Toma de decisiones informadas para la actualización y mantenimiento de la infraestructura.
+
+-Reducción de tiempos de inactividad de la infraestructura tecnológica.
 
 ## 5.1.2. Criterios de Inversión
+Costo de inversión del proyecto: 10,172.00
+Tasa de descuento : 9%
+
+**Egresos** (gastos operacionales como parte del funcionamiento del software en la puesta en produccion)
+
+|Gasto|Cantidad|Costo Unitario (S/)|
+   | - | :- | :- |
+   |Viáticos|1|300||
+   |Movilidad del equipo de trabajo|1|200||
+   |Total||3,222.00|
+   
+**Ingreso anual y beneficios del sistema**
+
+|Gasto|Cantidad|Costo Unitario (S/)|
+   | - | :- | :- |
+   |Reducción en pérdidas|50%|2000||
+   |Mejora del sistema|50%|2000||
+   |Total||4000|
+   
+  **Flujo de caja**
+  
+  |Periodo|Ingreso|Egreso|Flujo efectivo
+   | -: | :-: | :-: | :-:
+   |0|||-10 172|
+   |1|4000|500|3500|
+   |3|4000|500|3500
+   |4|4000|500|3500
+   |5|4000|500|3500
+ 
 
 ### 5.1.2.1. Relación Beneficio/Costo (B/C)
 
-En base a los costos y beneficios identificados, se evalúa si es factible el desarrollo del proyecto. Si se presentan varias alternativas de solución, se evaluará cada una de ellas para determinar la mejor solución desde el punto de vista del retorno de la inversión.
 
-La fórmula para calcular el B/C es:
+B/C = 1.34
 
-\[
-B/C = \frac{\text{Beneficios totales}}{\text{Costos totales}}
-\]
-
-- **Beneficios Totales**: S/ 12,000
-- **Costos Totales**: S/ 10,172
-
-\[
-B/C = \frac{12,000}{10,172} = 1.18
-\]
-
-**Interpretación**: Dado que el B/C es mayor a 1 (1.18), el proyecto es financieramente viable y debería aceptarse.
+**Interpretación**: Dado que el B/C es mayor a 1 (1.34), el proyecto es financieramente viable y debería aceptarse y por cada unidad monetaria invertida, se espera obtener aproximadamente 0.34 unidades monetarias de beneficio.
 
 ### 5.1.2.2. Valor Actual Neto (VAN)
 
-El VAN es el valor presente de los flujos de caja futuros generados por el proyecto, descontados al presente. Se calcula de la siguiente manera:
 
-\[
-VAN = \sum \frac{\text{Flujo de Caja}}{(1 + r)^t} - \text{Inversión Inicial}
-\]
-
-- **Tasa de descuento (r)**: 10%
+- **Tasa de descuento (r)**: 9%
 - **Inversión inicial**: S/ 10,172
-- **Flujos de caja proyectados**: S/ 4,000 anuales por 4 años.
+- **Flujos de caja proyectados**: S/ 3500 anuales por 5 años.
+VAN = S/. 13,613.78 - S/ 10,172
+VAN = S/. 3,441.78
 
-\[
-VAN = \frac{4000}{(1 + 0.10)^1} + \frac{4000}{(1 + 0.10)^2} + \frac{4000}{(1 + 0.10)^3} + \frac{4000}{(1 + 0.10)^4} - 10,172
-\]
 
-Calculando:
-
-\[
-VAN = \frac{4000}{1.10} + \frac{4000}{1.21} + \frac{4000}{1.331} + \frac{4000}{1.4641} - 10,172
-\]
-\[
-VAN = 3636.36 + 3305.79 + 3006.77 + 2732.39 - 10,172
-\]
-\[
-VAN = 12,681.31 - 10,172 = 2,509.31
-\]
-
-**Interpretación**: El VAN es positivo (S/ 2,509.31), lo que indica que el proyecto generará un valor adicional neto sobre la inversión inicial, por lo que es viable.
+**Interpretación**: El VAN es positivo (S/. 3,441.78), lo que indica que el proyecto generará un valor adicional neto sobre la inversión inicial, por lo que es viable.
 
 ### 5.1.2.3. Tasa Interna de Retorno (TIR)
 
-La TIR es la tasa porcentual que indica la rentabilidad promedio anual que genera el capital invertido en el proyecto. Se calcula resolviendo la siguiente ecuación:
+TIR = 21%
 
-\[
-0 = \sum \frac{4000}{(1 + TIR)^t} - 10,172
-\]
-
-Usando una aproximación iterativa, se obtiene que la TIR es aproximadamente del 18%.
-
-**Interpretación**: Dado que la TIR (18%) es mayor que la tasa de descuento asumida (10%), el proyecto es rentable.
+**Interpretación**: Dado que la TIR (21%) es mayor que la tasa de descuento asumida (10%), el proyecto es rentable.
 
 ---
 # 6. Conclusiones
 
-El proyecto es completamente viable, dado que la infraestructura de la UPT permite su implementación sin requerir grandes inversiones adicionales, y los costos previstos son justificados por los beneficios que ofrecerá. Entre estos beneficios destacan una gestión más eficiente de los recursos tecnológicos, optimización del rendimiento de los equipos, reducción de costos operativos a largo plazo y un mantenimiento preventivo más eficaz. Además, el sistema cumple con las normativas legales, asegurando un impacto positivo en la comunidad universitaria, mejorando la calidad del servicio tecnológico, y manteniendo un impacto ambiental mínimo.
+La propuesta de mejora de la infraestructura tecnológica de la universidad es viable desde todos los aspectos analizados: operativos, legales, sociales, ambientales y financieros. La inversión inicial se justifica por los beneficios tangibles e intangibles que aportará a la universidad, como la optimización de los recursos, la mejora en la eficiencia del rendimiento de los equipos y una reducción significativa de los costos operativos a largo plazo. Además, el impacto ambiental es mínimo, y el proyecto cumple con las normativas legales. La implementación de esta herramienta mejorará notablemente la calidad del servicio tecnológico que se ofrece a la comunidad universitaria.
